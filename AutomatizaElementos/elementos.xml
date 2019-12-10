@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<modelo>
+	<codProcedimiento>ED433A</codProcedimiento>
+	<convocatoria>2019</convocatoria>
+	<origen>
+		<elementosorigen>
+			<entry>
+				<key>idSolicitud</key>
+				<value>
+					<bloque>generico</bloque>
+					<descripcion>
+						<es_ES>
+							<![CDATA[Identificador de la solicitud]]>
+						</es_ES>
+						<gl_ES>
+							<![CDATA[Identificador da solicitude]]>
+						</gl_ES>
+					</descripcion>
+					<tipo>String</tipo>
+					<tabla>
+						<nombre>ESTRELLA</nombre>
+						<campo>ID_SOLICITUD</campo>
+						<tipo>NUMBER(19)</tipo>
+						<valor/>
+					</tabla>
+					<xpathSolicitudSede/>
+					<campoFormula/>
+				</value>
+			</entry>		
+			<entry>
+				<key>idExpediente</key>
+				<value>
+					<bloque>generico</bloque>
+					<descripcion>
+						<es_ES>
+							<![CDATA[Identificador del expediente]]>
+						</es_ES>
+						<gl_ES>
+							<![CDATA[Identificador do expediente]]>
+						</gl_ES>
+					</descripcion>
+					<tipo>String</tipo>
+					<tabla>
+						<nombre>ESTRELLA</nombre>
+						<campo>ID_EXPEDIENTE</campo>
+						<tipo>NUMBER(19)</tipo>
+						<valor/>
+					</tabla>
+					<xpathSolicitudSede/>
+					<campoFormula/>
+				</value>
+			</entry>
+			<!-- Datos del solicitante-->
+			<entry>
+				<key>solicitante</key>
+				<value>
+					<bloque>generico</bloque>
+					<descripcion>
+						<es_ES>
+							<![CDATA[Datos solicitante]]>
+						</es_ES>
+						<gl_ES>
+							<![CDATA[Datos solicitante]]>
+						</gl_ES>
+					</descripcion>
+					<tipo>
+						<![CDATA[HashMap<String, String]]>
+					</tipo>
+					<elementosLista>
+						<entry>
+							<key>nombre</key>
+							<value>
+								<bloque>generico</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Nombre del solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Nome do solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtNombre</xpathSolicitudSede>
+								<campoFormula>SOLI1_NOMBRE</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>apellido1</key>
+							<value>
+								<bloque>generico</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Primer apellido]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Apelido segundo]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtApel1</xpathSolicitudSede>
+								<campoFormula>SOLI1_APELLIDO1</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>apellido2</key>
+							<value>
+								<bloque>generico</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Segundo apellido]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Segundo apelido]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtApel2</xpathSolicitudSede>
+								<campoFormula>SOLI1_APELLIDO2</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>tipoidentificador</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Tipo documento]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Tipo documento]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede/>
+								<campoFormula>SOLI1_TIPOIDENT</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>identificador</key>
+							<value>
+								<bloque>generico</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Identificador]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Identificador]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtNifCif</xpathSolicitudSede>
+								<campoFormula>SOLI1_NUMIDENT</campoFormula>
+							</value>
+						</entry>
+					</elementosLista>
+					<implementacion>
+						<clase>es.xunta.amtega.ptwanda.accesotrewa.interesados.impl.ConsultaInteresadosServiceImpl</clase>
+						<metodo>obtenerDatosSolicitante</metodo>
+						<parametros>{idExpediente}</parametros>
+					</implementacion>
+				</value>
+			</entry>
+			<!-- Datos de revisión-->
+			<entry>
+				<key>revision</key>
+				<value>
+					<bloque>solicitud</bloque>
+					<descripcion>
+						<es_ES>
+							<![CDATA[Datos revision]]>
+						</es_ES>
+						<gl_ES>
+							<![CDATA[Datos revision]]>
+						</gl_ES>
+					</descripcion>
+					<tipo>
+						<![CDATA[HashMap<String, String]]>
+					</tipo>
+					<elementosLista>
+						<entry>
+							<key>resultado</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Resultado revisión]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Resultado revisión]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede/>
+								<campoFormula/>
+							</value>
+						</entry>
+						<entry>
+							<key>tipoResolucion</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Tipo resolución]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Tipo resolución]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede/>
+								<campoFormula/>
+							</value>
+						</entry>
+						<!-- Datos específicos -->
+						<!-- En este bloque se ponen los datos específicos -->
+<!-- esta es la estructura de los campos de texto y desplegables--><entry>
+			<key>nombreDirector</key>
+			<value>
+				<bloque>solicitud</bloque>
+				<descripcion>
+					<es_ES>
+						<![CDATA[Nombre director]]>
+					</es_ES>
+					<gl_ES>
+						<![CDATA[Nome director]]>
+					</gl_ES>
+				</descripcion>
+				<tipo>String</tipo>
+				<xpathSolicitudSede>//ProcedimientoXunta/CT102A/Director/txtNombre</xpathSolicitudSede>
+				<campoFormula>ESP-directorName</campoFormula>
+			</value>
+		</entry><entry>
+			<key>apellidoUnoDirector</key>
+			<value>
+				<bloque>solicitud</bloque>
+				<descripcion>
+					<es_ES>
+						<![CDATA[Apellido director]]>
+					</es_ES>
+					<gl_ES>
+						<![CDATA[Apelido director]]>
+					</gl_ES>
+				</descripcion>
+				<tipo>String</tipo>
+				<xpathSolicitudSede>//ProcedimientoXunta/CT102A/Director/txtApel1</xpathSolicitudSede>
+				<campoFormula>ESP-lastName1</campoFormula>
+			</value>
+		</entry><entry>
+			<key>apellidoDosDirector</key>
+			<value>
+				<bloque>solicitud</bloque>
+				<descripcion>
+					<es_ES>
+						<![CDATA[Apellido 2 director]]>
+					</es_ES>
+					<gl_ES>
+						<![CDATA[Apelido 2 director]]>
+					</gl_ES>
+				</descripcion>
+				<tipo>String</tipo>
+				<xpathSolicitudSede>//ProcedimientoXunta/CT102A/Director/txtApel2</xpathSolicitudSede>
+				<campoFormula>ESP-lastName2</campoFormula>
+			</value>
+		</entry><entry>
+			<key>cpDirector</key>
+			<value>
+				<bloque>solicitud</bloque>
+				<descripcion>
+					<es_ES>
+						<![CDATA[CP director]]>
+					</es_ES>
+					<gl_ES>
+						<![CDATA[CP director]]>
+					</gl_ES>
+				</descripcion>
+				<tipo>String</tipo>
+				<xpathSolicitudSede>//ProcedimientoXunta/CT102A/Director/txtCp</xpathSolicitudSede>
+				<campoFormula>ESP-postalCodeDirector</campoFormula>
+			</value>
+		</entry><!-- datos bancarios -->
+						
+						<entry>
+							<key>titularCuenta</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[titularCuenta]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[titularConta]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/DatosBancarios/txtNombreEntidad</xpathSolicitudSede>
+								<campoFormula>ESP-accountHolder</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>numeroCuenta</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[numeroCuenta]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[numeroConta]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>concat(//ProcedimientoXunta/SI460A/DatosBancarios/txtBloque1,//ProcedimientoXunta/SI460A/DatosBancarios/txtBloque2,//ProcedimientoXunta/SI460A/DatosBancarios/txtBloque3,//ProcedimientoXunta/SI460A/DatosBancarios/txtBloque4,//ProcedimientoXunta/SI460A/DatosBancarios/txtBloque5,//ProcedimientoXunta/SI460A/DatosBancarios/txtBloque6)</xpathSolicitudSede>
+								<campoFormula>ESP-accountNumber</campoFormula>
+							</value>
+						</entry>											
+							<!-- Fin datos bancarios -->
+							
+						
+						<!-- FIN Datos específicos -->			
+
+					</elementosLista>
+					<implementacion>
+						<clase>es.xunta.amtega.ptwanda.accesotrewa.expediente.impl.ConsultaDatosExpedienteServiceImpl</clase>
+						<metodo>obtenerResultadoRevision</metodo>
+						<parametros>{idExpediente}</parametros>
+					</implementacion>
+				</value>
+			</entry>
+			<!-- Dirección del solicitante -->
+			<entry>
+				<key>direccionSolicitante</key>
+				<value>
+					<bloque>solicitud</bloque>
+					<descripcion>
+						<es_ES>
+							<![CDATA[Dirección solicitante]]>
+						</es_ES>
+						<gl_ES>
+							<![CDATA[Dirección solicitante]]>
+						</gl_ES>
+					</descripcion>
+					<tipo>
+						<![CDATA[HashMap<String, String]]>
+					</tipo>
+					<elementosLista>
+						<entry>
+							<key>tipovia</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Tipo vía solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Tipo vía solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/cmbTipoVia</xpathSolicitudSede>
+								<campoFormula>SOLI1_TIPOVIA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>nombreVia</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Nombre vía solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Nome vía solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtDireccion</xpathSolicitudSede>
+								<campoFormula>SOLI1_NOMBREVIA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>numero</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Número solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Número solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtNumero</xpathSolicitudSede>
+								<campoFormula>SOLI1_NUMERO</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>escalera</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Escalera solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Escaleira solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtBloque</xpathSolicitudSede>
+								<campoFormula>SOLI1_BLOQUE</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>piso</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Piso solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Piso solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtPiso</xpathSolicitudSede>
+								<campoFormula>SOLI1_PISO</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>puerta</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Puerta solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Porta solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtPuerta</xpathSolicitudSede>
+								<campoFormula>SOLI1_PUERTA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>parroquia</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Parroquia solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Parroquia solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtParroquia</xpathSolicitudSede>
+								<campoFormula>SOLI1_PARROQUIA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>lugar</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[lugar solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[lugar solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtLugar</xpathSolicitudSede>
+								<campoFormula>SOLI1_LUGAR</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>codigoPostal</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[CP solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[CP solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtCodigoPostal</xpathSolicitudSede>
+								<campoFormula>SOLI1_CP</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>provincia</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Provincia solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Provincia solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/cmbProvincia</xpathSolicitudSede>
+								<campoFormula>SOLI1_CODPROV</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>municipio</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Municipio solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Concello solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/cmbAyuntamiento</xpathSolicitudSede>
+								<campoFormula>SOLI1_CODMUNICIPIO</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>ciudad</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Localidad solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Localidade solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtLocalidad</xpathSolicitudSede>
+								<campoFormula>SOLI1_LOCALIDAD</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>telefono</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Teléfono solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Teléfono solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtTelefono</xpathSolicitudSede>
+								<campoFormula>SOLI1_TELEFONO</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>telefonoMovilSolicitante</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Teléfono móvil solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Teléfono móbil solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtMovil</xpathSolicitudSede>
+								<campoFormula>SOLI1_TELEFONO2</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>email</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[correo electrónico solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[correo electrónico solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtEmail</xpathSolicitudSede>
+								<campoFormula>SOLI1_EMAIL</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>email</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Email solicitante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Email solicitante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Entidad/txtEmail</xpathSolicitudSede>
+								<campoFormula>SOLI1_EMAIL</campoFormula>
+							</value>
+						</entry>
+					</elementosLista>
+					<implementacion>
+						<clase>es.xunta.amtega.ptwanda.accesotrewa.interesados.impl.ConsultaInteresadosServiceImpl</clase>
+						<metodo>obtenerDatosContactoSolicitante</metodo>
+						<parametros>{idExpediente}</parametros>
+					</implementacion>
+				</value>
+			</entry>
+
+			<!-- Datos del representante -->
+			<entry>
+				<key>representante</key>
+				<value>
+					<bloque>solicitud</bloque>
+					<descripcion>
+						<es_ES>
+							<![CDATA[Datos representante]]>
+						</es_ES>
+						<gl_ES>
+							<![CDATA[Datos representante]]>
+						</gl_ES>
+					</descripcion>
+					<tipo>
+						<![CDATA[HashMap<String, String>]]>
+					</tipo>
+					<elementosLista>
+						<entry>
+							<key>nombre</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Nombre representante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Nome representante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Declarante/txtNombre</xpathSolicitudSede>
+								<campoFormula>REPR1_NOMBRE</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>apellido1</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Apellido representante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Apelido representante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Declarante/txtApel1</xpathSolicitudSede>
+								<campoFormula>REPR1_APELLIDO1</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>apellido2</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Apellido 2 representante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Apelido 2 representante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Declarante/txtApel2</xpathSolicitudSede>
+								<campoFormula>REPR1_APELLIDO2</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>tipoidentificador</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Tipo Documento]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Tipo Documento]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede/>
+								<campoFormula>REPR1_TIPOIDENT</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>identificador</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[DNI representante]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[DNI representante]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Declarante/txtNifCif</xpathSolicitudSede>
+								<campoFormula>REPR1_NUMIDENT</campoFormula>
+							</value>
+						</entry>
+					</elementosLista>
+					<implementacion>
+						<clase>es.xunta.amtega.ptwanda.accesotrewa.interesados.impl.ConsultaInteresadosServiceImpl</clase>
+						<metodo>obtenerDatosInteresados</metodo>
+						<parametros>{idExpediente},[razonInteres=REPRESENTANTE]</parametros>
+					</implementacion>
+				</value>
+			</entry>
+			<!-- Dirección de notificación-->
+			<entry>
+				<key>direccionRepresentante</key>
+				<value>
+					<bloque>solicitud</bloque>
+					<descripcion>
+						<es_ES>
+							<![CDATA[Dirección representante]]>
+						</es_ES>
+						<gl_ES>
+							<![CDATA[Enderezo representante]]>
+						</gl_ES>
+					</descripcion>
+					<tipo>
+						<![CDATA[HashMap<String, String>]]>
+					</tipo>
+					<elementosLista>
+						<entry>
+							<key>tipovia</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Tipo vía notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Tipo vía notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/cmbTipoVia</xpathSolicitudSede>
+								<campoFormula>NOTIF_TIPOVIA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>nombreVia</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Nombre vía notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Nome vía notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtDireccion</xpathSolicitudSede>
+								<campoFormula>NOTIF_NOMBREVIA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>numero</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Número notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Número notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtNumero</xpathSolicitudSede>
+								<campoFormula>NOTIF_NUMERO</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>escalera</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Escalera notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Escaleira notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtBloque</xpathSolicitudSede>
+								<campoFormula>NOTIF_BLOQUE</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>piso</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Piso notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Piso notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtPiso</xpathSolicitudSede>
+								<campoFormula>NOTIF_PISO</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>puerta</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Puerta notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Porta notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtPuerta</xpathSolicitudSede>
+								<campoFormula>NOTIF_PUERTA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>parroquia</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Parroquia Notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Parroquia Notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtParroquia</xpathSolicitudSede>
+								<campoFormula>NOTIF_PARROQUIA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>lugar</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[lugar Notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[lugar Notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtLugar</xpathSolicitudSede>
+								<campoFormula>NOTIF_LUGAR</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>codigoPostal</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[CP notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[CP notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtCodigoPostal</xpathSolicitudSede>
+								<campoFormula>NOTIF_CP</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>provincia</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Provincia notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Provincia notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/cmbProvincia</xpathSolicitudSede>
+								<campoFormula>NOTIF_PROVINCIA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>municipio</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Municipio notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Concello notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/cmbAyuntamiento</xpathSolicitudSede>
+								<campoFormula>NOTIF_MUNICIPIO</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>ciudad</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Localidad notificación]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Localidade notificación]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtLocalidad</xpathSolicitudSede>
+								<campoFormula>NOTIF_LOCALIDAD</campoFormula>
+							</value>
+							<entry>
+								<!-- OK -->
+								<key>telefonoMovil</key>
+								<value>
+									<bloque>solicitud</bloque>
+									<!-- generico, solicitud, tramitacion -->
+									<descripcion>
+										<es_ES>
+											<![CDATA[Telefono de notificación]]>
+										</es_ES>
+										<gl_ES>
+											<![CDATA[Telefono de notificación]]>
+										</gl_ES>
+									</descripcion>
+									<tipo>String</tipo>
+									<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtTelefono</xpathSolicitudSede>
+									<campoFormula>NOTIF_TELEFONO2</campoFormula>
+								</value>
+							</entry>
+							<entry>
+								<!-- OK -->
+								<key>email</key>
+								<value>
+									<bloque>solicitud</bloque>
+									<!-- generico, solicitud, tramitacion -->
+									<descripcion>
+										<es_ES>
+											<![CDATA[Email de notificación]]>
+										</es_ES>
+										<gl_ES>
+											<![CDATA[Email de notificación]]>
+										</gl_ES>
+									</descripcion>
+									<tipo>String</tipo>
+									<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtEmail</xpathSolicitudSede>
+									<campoFormula>NOTIF_EMAIL</campoFormula>
+								</value>
+							</entry>
+						</entry>
+					</elementosLista>
+					<implementacion>
+						<clase>es.xunta.amtega.ptwanda.accesotrewa.interesados.impl.ConsultaInteresadosServiceImpl</clase>
+						<metodo>obtenerDatosContactoInteresado</metodo>
+						<parametros>{idExpediente},[razonInteres=REPRESENTANTE]</parametros>
+					</implementacion>
+				</value>
+			</entry>	
+
+			<entry>
+				<key>datosExpediente</key>
+				<value>
+					<bloque>solicitud</bloque>
+					<descripcion>
+						<es_ES>
+							<![CDATA[Datos Notificación]]>
+						</es_ES>
+						<gl_ES>
+							<![CDATA[Datos Notificación]]>
+						</gl_ES>
+					</descripcion>
+					<tipo>
+						<![CDATA[HashMap<String, String>]]>
+					</tipo>
+					<elementosLista>
+						<entry>
+<!-- OK -->
+							<key>interesadoNotificar</key>
+							<value>
+								<bloque>generico</bloque>
+<!-- generico, solicitud, tramitacion -->
+								<descripcion>
+									<es_ES>
+										<![CDATA[Notifíquese a]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Notifíquese a]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>Integer</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/rbNotificar</xpathSolicitudSede>
+								<campoFormula>NOTIF_INTERESADO_NOTIFICACION</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>medioNotificacion</key>
+							<value>
+								<bloque>solicitud</bloque>
+<!-- generico, solicitud, tramitacion -->
+								<descripcion>
+									<es_ES>
+										<![CDATA[Solicita canal electrónico]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Solicita canle electrónico]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>Integer</tipo>
+								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/rblModalidad</xpathSolicitudSede>
+								<campoFormula>NOTIF_MEDIO_NOTIFICACION</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>fechaMedioNotificacion</key>
+							<value>
+								<bloque>solicitud</bloque>
+<!-- generico, solicitud, tramitacion -->
+								<descripcion>
+									<es_ES>
+										<![CDATA[Fecha elección medio]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Data elección medio]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>Date</tipo>
+								<xpathSolicitudSede/>
+								<campoFormula>NOTIF_FECHA_ELECCION_NOTIFICACION</campoFormula>
+							</value>
+						</entry>
+					</elementosLista>
+					<implementacion>
+						<clase>es.xunta.amtega.ptwanda.accesotrewa.interesados.impl.ConsultaInteresadosServiceImpl</clase>
+						<metodo>obtenerDatosExpediente</metodo>
+						<parametros>{idExpediente}</parametros>
+					</implementacion>
+				</value>
+			</entry>				
+		<!-- Autorizacións -->
