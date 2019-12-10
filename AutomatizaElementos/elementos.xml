@@ -1081,4 +1081,30 @@
 					</implementacion>
 				</value>
 			</entry>				
-		<!-- Autorizacións -->
+		<!-- Autorizacións --></elementosorigen>
+	</origen>
+	<sede>
+		<elementossede>
+<entry>
+				<key>CODIGO_DELEGACION</key>
+				<value>
+					<xpathsolicitudsede>//ProcedimientoXunta/SI460A_4/Delegacion/cmbDelegacion</xpathsolicitudsede>
+				</value>
+			</entry><entry>
+				<key>IDIOMA_EXPEDIENTE</key>
+				<value>
+					<xpathsolicitudsede>//ProcedimientoXunta/SI460A_4/Delegacion/txtIdioma</xpathsolicitudsede>
+				</value>
+			</entry><entry>
+				<key>MEDIO_NOTIFICACION</key>
+				<value>
+					<xpathsolicitudsede>//ProcedimientoXunta/SI460A/Notificacion/rblModalidad</xpathsolicitudsede>
+				</value>
+			</entry><entry>
+				<key>INTERESADO_NOTIFICACION</key>
+				<value>
+					<xpathsolicitudsede>//ProcedimientoXunta/SI460A/Notificacion/rbNotificar</xpathsolicitudsede>
+				</value>
+			</entry>		</elementossede>
+	</sede>
+</modelo>

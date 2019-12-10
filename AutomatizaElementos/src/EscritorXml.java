@@ -1030,10 +1030,14 @@ public class EscritorXml {
 	
 	private String ano;
 	private String procedimiento;
+	private String camposSede[];
+	private int index;
 	
 	public EscritorXml(String ano, String procedimiento){
 		this.ano = ano;
 		this.procedimiento = procedimiento;
+		this.camposSede = new String[4];
+		this.index = 0;
 	}
 
 	private String escribeElementos(String bloqueEspecificos[]) {
@@ -1043,33 +1047,54 @@ public class EscritorXml {
 		elementos += BLOQUE3;
 		
 		for(int i=0; i<bloqueEspecificos.length; i++) {
-			elementos += bloqueEspecificos[i];
+			if(!bloqueEspecificos[i].equals("")) {
+				elementos += bloqueEspecificos[i];
+			}
 		}
 		
 		elementos += BLOQUE4;
+		elementos += formaElementosSede();
 		
 		return elementos;
 	}
 	
 	public String formaCampoEsp(String campos[]) {
 		
-		String campo = "<entry>\r\n" + 
-				"			<key>" + campos[0] + "</key>\r\n" + 
-				"			<value>\r\n" + 
-				"				<bloque>solicitud</bloque>\r\n" + 
-				"				<descripcion>\r\n" + 
-				"					<es_ES>\r\n" + 
-				"						<![CDATA[" + campos[2] + "]]>\r\n" + 
-				"					</es_ES>\r\n" + 
-				"					<gl_ES>\r\n" + 
-				"						<![CDATA[" + campos[1] + "]]>\r\n" + 
-				"					</gl_ES>\r\n" + 
-				"				</descripcion>\r\n" + 
-				"				<tipo>String</tipo>\r\n" + 
-				"				<xpathSolicitudSede>" + campos[4] + "</xpathSolicitudSede>\r\n" + 
-				"				<campoFormula>" + campos[5] + "</campoFormula>\r\n" + 
-				"			</value>\r\n" + 
-				"		</entry>";
+		String campo = "";
+		
+		if(campos[0].equals("CODIGO_DELEGACION") || campos[0].equals("INTERESADO_NOTIFICACION") || campos[0].equals("MEDIO_NOTIFICACION") || campos[0].equals("IDIOMA_EXPEDIENTE")) {
+			
+			campo = "<entry>\r\n" + 
+					"				<key>" + campos[0] + "</key>\r\n" + 
+					"				<value>\r\n" + 
+					"					<xpathsolicitudsede>" + campos[4] + "</xpathsolicitudsede>\r\n" + 
+					"				</value>\r\n" + 
+					"			</entry>";
+			
+			camposSede[index] = campo;
+			index++;
+			campo = "";
+			
+		} else {
+			
+			campo = "<entry>\r\n" + 
+					"			<key>" + campos[0] + "</key>\r\n" + 
+					"			<value>\r\n" + 
+					"				<bloque>solicitud</bloque>\r\n" + 
+					"				<descripcion>\r\n" + 
+					"					<es_ES>\r\n" + 
+					"						<![CDATA[" + campos[2] + "]]>\r\n" + 
+					"					</es_ES>\r\n" + 
+					"					<gl_ES>\r\n" + 
+					"						<![CDATA[" + campos[1] + "]]>\r\n" + 
+					"					</gl_ES>\r\n" + 
+					"				</descripcion>\r\n" + 
+					"				<tipo>String</tipo>\r\n" + 
+					"				<xpathSolicitudSede>" + campos[4] + "</xpathSolicitudSede>\r\n" + 
+					"				<campoFormula>" + campos[5] + "</campoFormula>\r\n" + 
+					"			</value>\r\n" + 
+					"		</entry>";
+		}		
 		
 		return campo;
 	}
@@ -1092,7 +1117,20 @@ public class EscritorXml {
 	}
 	
 	private String formaElementosSede() {
-		return "";
+		
+		String bloque = "</elementosorigen>\r\n" + 
+				"	</origen>\r\n" + 
+				"	<sede>\r\n" + 
+				"		<elementossede>\r\n" + 
+							camposSede[0] + 
+							camposSede[1] + 
+							camposSede[2] + 
+							camposSede[3] + 
+				"		</elementossede>\r\n" + 
+				"	</sede>\r\n" + 
+				"</modelo>";
+		
+		return bloque;
 	}
 	
 	private String formaCabecera() {
