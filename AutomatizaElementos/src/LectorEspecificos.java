@@ -19,7 +19,7 @@ public class LectorEspecificos {
 	public void leeDatosEsp() {
 		
 		try (FileInputStream file = new FileInputStream(new File(nombreArchivo))) {
-			EscritorXml escritor = new EscritorXml("2019", "ED433A");
+			EscritorXml escritor = new EscritorXml("2019", "ED433A", "Juridica");
 			// leer archivo excel
 			XSSFWorkbook worbook = new XSSFWorkbook(file);
 			

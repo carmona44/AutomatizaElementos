@@ -85,40 +85,6 @@
 							</value>
 						</entry>
 						<entry>
-							<key>apellido1</key>
-							<value>
-								<bloque>generico</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Primer apellido]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Apelido segundo]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtApel1</xpathSolicitudSede>
-								<campoFormula>SOLI1_APELLIDO1</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>apellido2</key>
-							<value>
-								<bloque>generico</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Segundo apellido]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Segundo apelido]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtApel2</xpathSolicitudSede>
-								<campoFormula>SOLI1_APELLIDO2</campoFormula>
-							</value>
-						</entry>
-						<entry>
 							<key>tipoidentificador</key>
 							<value>
 								<bloque>solicitud</bloque>
@@ -134,7 +100,7 @@
 								<xpathSolicitudSede/>
 								<campoFormula>SOLI1_TIPOIDENT</campoFormula>
 							</value>
-						</entry>
+						</entry> 
 						<entry>
 							<key>identificador</key>
 							<value>
@@ -152,6 +118,7 @@
 								<campoFormula>SOLI1_NUMIDENT</campoFormula>
 							</value>
 						</entry>
+
 					</elementosLista>
 					<implementacion>
 						<clase>es.xunta.amtega.ptwanda.accesotrewa.interesados.impl.ConsultaInteresadosServiceImpl</clase>
@@ -211,9 +178,7 @@
 								<campoFormula/>
 							</value>
 						</entry>
-						<!-- Datos específicos -->
-						<!-- En este bloque se ponen los datos específicos -->
-<!-- esta es la estructura de los campos de texto y desplegables--><entry>
+						<!-- Datos específicos --><entry>
 			<key>nombreDirector</key>
 			<value>
 				<bloque>solicitud</bloque>
@@ -315,8 +280,7 @@
 				<campoFormula>ESP-englishKnowledge</campoFormula>
 			</value>
 		</entry>
-            <!-- datos bancarios -->
-						
+            <!-- DATOS BANCARIOS -->
 						<entry>
 							<key>titularCuenta</key>
 							<value>
@@ -334,6 +298,8 @@
 								<campoFormula>ESP-accountHolder</campoFormula>
 							</value>
 						</entry>
+						<!--<xpathSolicitudSede>//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtNombreEntidad[1]</xpathSolicitudSede>-->
+								
 						<entry>
 							<key>numeroCuenta</key>
 							<value>
@@ -350,11 +316,12 @@
 								<xpathSolicitudSede>concat(//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque1,//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque2,//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque3,//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque4,//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque5,//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque6)</xpathSolicitudSede>
 								<campoFormula>ESP-accountNumber</campoFormula>
 							</value>
-						</entry>											
-							<!-- Fin datos bancarios -->
-							
+						</entry>								<!--<xpathSolicitudSede>concat(//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque1[1],//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque2[1],//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque3[1],//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque4[1],//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque5[1],//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque6[1])</xpathSolicitudSede>-->
+																			
 						
-						<!-- FIN Datos específicos -->			
+						
+				
+						<!-- Fin datos específicos -->			
 
 					</elementosLista>
 					<implementacion>
@@ -602,16 +569,17 @@
 								<campoFormula>SOLI1_TELEFONO</campoFormula>
 							</value>
 						</entry>
+						<!-- ******************** Eliminar no caso de persoa xurídica ******************** -->
 						<entry>
-							<key>telefonoMovilSolicitante</key>
+							<key>movil</key>
 							<value>
 								<bloque>solicitud</bloque>
 								<descripcion>
 									<es_ES>
-										<![CDATA[Teléfono móvil solicitante]]>
+										<![CDATA[Email solicitante]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Teléfono móbil solicitante]]>
+										<![CDATA[Email solicitante]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
@@ -620,20 +588,20 @@
 							</value>
 						</entry>
 						<entry>
-							<key>email</key>
+							<key>fax</key>
 							<value>
 								<bloque>solicitud</bloque>
 								<descripcion>
 									<es_ES>
-										<![CDATA[correo electrónico solicitante]]>
+										<![CDATA[Fax solicitante]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[correo electrónico solicitante]]>
+										<![CDATA[Fax solicitante]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtEmail</xpathSolicitudSede>
-								<campoFormula>SOLI1_EMAIL</campoFormula>
+								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtFax</xpathSolicitudSede>
+								<campoFormula>SOLI1_FAX</campoFormula>
 							</value>
 						</entry>
 						<entry>
@@ -772,7 +740,11 @@
 					</implementacion>
 				</value>
 			</entry>
-			<!-- Dirección de notificación-->
+
+			<!-- Datos de notificacion en caso de persona mixta o física -->
+
+
+			<!-- Dirección de notificación en caso de persona jurídica -->
 			<entry>
 				<key>direccionRepresentante</key>
 				<value>
@@ -790,246 +762,42 @@
 					</tipo>
 					<elementosLista>
 						<entry>
-							<key>tipovia</key>
+							<!-- OK -->
+							<key>telefonoMovil</key>
 							<value>
 								<bloque>solicitud</bloque>
+								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
-										<![CDATA[Tipo vía notificación]]>
+										<![CDATA[Telefono de notificación]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Tipo vía notificación]]>
+										<![CDATA[Telefono de notificación]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/cmbTipoVia</xpathSolicitudSede>
-								<campoFormula>NOTIF_TIPOVIA</campoFormula>
+								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtTelefono</xpathSolicitudSede>
+								<campoFormula>NOTIF_TELEFONO2</campoFormula>
 							</value>
 						</entry>
 						<entry>
-							<key>nombreVia</key>
+							<!-- OK -->
+							<key>email</key>
 							<value>
 								<bloque>solicitud</bloque>
+								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
-										<![CDATA[Nombre vía notificación]]>
+										<![CDATA[Email de notificación]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Nome vía notificación]]>
+										<![CDATA[Email de notificación]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtDireccion</xpathSolicitudSede>
-								<campoFormula>NOTIF_NOMBREVIA</campoFormula>
+								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtEmail</xpathSolicitudSede>
+								<campoFormula>NOTIF_EMAIL</campoFormula>
 							</value>
-						</entry>
-						<entry>
-							<key>numero</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Número notificación]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Número notificación]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtNumero</xpathSolicitudSede>
-								<campoFormula>NOTIF_NUMERO</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>escalera</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Escalera notificación]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Escaleira notificación]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtBloque</xpathSolicitudSede>
-								<campoFormula>NOTIF_BLOQUE</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>piso</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Piso notificación]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Piso notificación]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtPiso</xpathSolicitudSede>
-								<campoFormula>NOTIF_PISO</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>puerta</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Puerta notificación]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Porta notificación]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtPuerta</xpathSolicitudSede>
-								<campoFormula>NOTIF_PUERTA</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>parroquia</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Parroquia Notificación]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Parroquia Notificación]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtParroquia</xpathSolicitudSede>
-								<campoFormula>NOTIF_PARROQUIA</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>lugar</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[lugar Notificación]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[lugar Notificación]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtLugar</xpathSolicitudSede>
-								<campoFormula>NOTIF_LUGAR</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>codigoPostal</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[CP notificación]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[CP notificación]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtCodigoPostal</xpathSolicitudSede>
-								<campoFormula>NOTIF_CP</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>provincia</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Provincia notificación]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Provincia notificación]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/cmbProvincia</xpathSolicitudSede>
-								<campoFormula>NOTIF_PROVINCIA</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>municipio</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Municipio notificación]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Concello notificación]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/cmbAyuntamiento</xpathSolicitudSede>
-								<campoFormula>NOTIF_MUNICIPIO</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>ciudad</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Localidad notificación]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Localidade notificación]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtLocalidad</xpathSolicitudSede>
-								<campoFormula>NOTIF_LOCALIDAD</campoFormula>
-							</value>
-							<entry>
-								<!-- OK -->
-								<key>telefonoMovil</key>
-								<value>
-									<bloque>solicitud</bloque>
-									<!-- generico, solicitud, tramitacion -->
-									<descripcion>
-										<es_ES>
-											<![CDATA[Telefono de notificación]]>
-										</es_ES>
-										<gl_ES>
-											<![CDATA[Telefono de notificación]]>
-										</gl_ES>
-									</descripcion>
-									<tipo>String</tipo>
-									<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtTelefono</xpathSolicitudSede>
-									<campoFormula>NOTIF_TELEFONO2</campoFormula>
-								</value>
-							</entry>
-							<entry>
-								<!-- OK -->
-								<key>email</key>
-								<value>
-									<bloque>solicitud</bloque>
-									<!-- generico, solicitud, tramitacion -->
-									<descripcion>
-										<es_ES>
-											<![CDATA[Email de notificación]]>
-										</es_ES>
-										<gl_ES>
-											<![CDATA[Email de notificación]]>
-										</gl_ES>
-									</descripcion>
-									<tipo>String</tipo>
-									<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtEmail</xpathSolicitudSede>
-									<campoFormula>NOTIF_EMAIL</campoFormula>
-								</value>
-							</entry>
 						</entry>
 					</elementosLista>
 					<implementacion>
@@ -1039,7 +807,6 @@
 					</implementacion>
 				</value>
 			</entry>	
-
 			<entry>
 				<key>datosExpediente</key>
 				<value>
@@ -1057,11 +824,11 @@
 					</tipo>
 					<elementosLista>
 						<entry>
-<!-- OK -->
+							<!-- OK -->
 							<key>interesadoNotificar</key>
 							<value>
 								<bloque>generico</bloque>
-<!-- generico, solicitud, tramitacion -->
+								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
 										<![CDATA[Notifíquese a]]>
@@ -1079,7 +846,7 @@
 							<key>medioNotificacion</key>
 							<value>
 								<bloque>solicitud</bloque>
-<!-- generico, solicitud, tramitacion -->
+								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
 										<![CDATA[Solicita canal electrónico]]>
@@ -1097,7 +864,7 @@
 							<key>fechaMedioNotificacion</key>
 							<value>
 								<bloque>solicitud</bloque>
-<!-- generico, solicitud, tramitacion -->
+								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
 										<![CDATA[Fecha elección medio]]>
@@ -1118,8 +885,9 @@
 						<parametros>{idExpediente}</parametros>
 					</implementacion>
 				</value>
-			</entry>				
-		<!-- Autorizacións --></elementosorigen>
+			</entry>		
+			
+			<!-- Autorizacións --></elementosorigen>
 	</origen>
 	<sede>
 		<elementossede>
