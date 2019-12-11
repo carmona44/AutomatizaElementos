@@ -4,8 +4,6 @@ import java.io.IOException;
 
 /*TODO List
  * 
- * Corregir bloques para que en las rutas de variables genéricas indiquen el nombre del procedimiento
- * 
  * Diferenciación entre persona física/jurídica/mixta(actualmente solo física)
  * 
  * Crear todos los ficheros XML (actualmente solo elementos.xml)
@@ -14,12 +12,12 @@ import java.io.IOException;
 
 public class EscritorXml {
 	
-	static final String BLOQUE1 = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\" standalone=\"yes\"?>\r\n" + 
+	private String bloque1 = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\" standalone=\"yes\"?>\r\n" + 
 			"<modelo>\r\n" + 
 			"	<codProcedimiento>";
-	static final String BLOQUE2 = "</codProcedimiento>\r\n" + 
+	private String bloque2 = "</codProcedimiento>\r\n" + 
 			"	<convocatoria>";
-	static final String BLOQUE3 = "</convocatoria>\r\n" + 
+	private String bloque3 = "</convocatoria>\r\n" + 
 			"	<origen>\r\n" + 
 			"		<elementosorigen>\r\n" + 
 			"			<entry>\r\n" + 
@@ -232,7 +230,7 @@ public class EscritorXml {
 			"						<!-- Datos específicos -->\r\n" + 
 			"						<!-- En este bloque se ponen los datos específicos -->\r\n" + 
 			"<!-- esta es la estructura de los campos de texto y desplegables-->";
-	static final String BLOQUE4 = "<!-- datos bancarios -->\r\n" + 
+	private String bloque4 = "<!-- datos bancarios -->\r\n" + 
 			"						\r\n" + 
 			"						<entry>\r\n" + 
 			"							<key>titularCuenta</key>\r\n" + 
@@ -1048,6 +1046,8 @@ public class EscritorXml {
 		this.procedimiento = procedimiento;
 		this.camposSede = new String[4];
 		this.index = 0;
+		this.bloque3 = bloque3.replace("SI460A", this.procedimiento);
+		this.bloque4 = bloque4.replace("SI460A", this.procedimiento);
 	}
 
 	private String escribeElementos(String bloqueEspecificos[]) {
@@ -1055,7 +1055,7 @@ public class EscritorXml {
 		String elementos = "";
 		
 		elementos += formaCabecera();
-		elementos += BLOQUE3;
+		elementos += bloque3;
 		
 		for(int i=0; i<bloqueEspecificos.length; i++) {
 			if(!bloqueEspecificos[i].equals("")) {
@@ -1063,7 +1063,7 @@ public class EscritorXml {
 			}
 		}
 		
-		elementos += BLOQUE4;
+		elementos += bloque4;
 		elementos += formaElementosSede();
 		
 		return buenFormato.getXmlFormateado(elementos, "2");
@@ -1153,7 +1153,7 @@ public class EscritorXml {
 	}
 	
 	private String formaCabecera() {
-		return BLOQUE1 + this.procedimiento + BLOQUE2 + this.ano;
+		return bloque1 + this.procedimiento + bloque2 + this.ano;
 	}
 
 }
