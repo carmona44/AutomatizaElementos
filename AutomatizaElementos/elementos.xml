@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <modelo>
 	<codProcedimiento>ED433A</codProcedimiento>
 	<convocatoria>2019</convocatoria>
@@ -229,7 +229,8 @@
 				<xpathSolicitudSede>//ProcedimientoXunta/CT102A/Director/txtNombre</xpathSolicitudSede>
 				<campoFormula>ESP-directorName</campoFormula>
 			</value>
-		</entry><entry>
+		</entry>
+            <entry>
 			<key>apellidoUnoDirector</key>
 			<value>
 				<bloque>solicitud</bloque>
@@ -245,7 +246,8 @@
 				<xpathSolicitudSede>//ProcedimientoXunta/CT102A/Director/txtApel1</xpathSolicitudSede>
 				<campoFormula>ESP-lastName1</campoFormula>
 			</value>
-		</entry><entry>
+		</entry>
+            <entry>
 			<key>apellidoDosDirector</key>
 			<value>
 				<bloque>solicitud</bloque>
@@ -261,7 +263,8 @@
 				<xpathSolicitudSede>//ProcedimientoXunta/CT102A/Director/txtApel2</xpathSolicitudSede>
 				<campoFormula>ESP-lastName2</campoFormula>
 			</value>
-		</entry><entry>
+		</entry>
+            <entry>
 			<key>cpDirector</key>
 			<value>
 				<bloque>solicitud</bloque>
@@ -277,7 +280,42 @@
 				<xpathSolicitudSede>//ProcedimientoXunta/CT102A/Director/txtCp</xpathSolicitudSede>
 				<campoFormula>ESP-postalCodeDirector</campoFormula>
 			</value>
-		</entry><!-- datos bancarios -->
+		</entry>
+            <entry>
+			<key>sexoDirector</key>
+			<value>
+				<bloque>solicitud</bloque>
+				<descripcion>
+					<es_ES>
+						<![CDATA[Sexo director]]>
+					</es_ES>
+					<gl_ES>
+						<![CDATA[Sexo director]]>
+					</gl_ES>
+				</descripcion>
+				<tipo>Integer</tipo>
+				<xpathSolicitudSede>//ProcedimientoXunta/CT102A/Director/rbSexo</xpathSolicitudSede>
+				<campoFormula>ESP-sexDirector</campoFormula>
+			</value>
+		</entry>
+            <entry>
+			<key>sabeIngles</key>
+			<value>
+				<bloque>solicitud</bloque>
+				<descripcion>
+					<es_ES>
+						<![CDATA[Sabe inglés]]>
+					</es_ES>
+					<gl_ES>
+						<![CDATA[Sabe inglés]]>
+					</gl_ES>
+				</descripcion>
+				<tipo>Boolean</tipo>
+				<xpathSolicitudSede>boolean(number(//ProcedimientoXunta/CT102A/Director/chSabe))</xpathSolicitudSede>
+				<campoFormula>ESP-englishKnowledge</campoFormula>
+			</value>
+		</entry>
+            <!-- datos bancarios -->
 						
 						<entry>
 							<key>titularCuenta</key>
@@ -1090,17 +1128,20 @@
 				<value>
 					<xpathsolicitudsede>//ProcedimientoXunta/SI460A_4/Delegacion/cmbDelegacion</xpathsolicitudsede>
 				</value>
-			</entry><entry>
+			</entry>
+      <entry>
 				<key>IDIOMA_EXPEDIENTE</key>
 				<value>
 					<xpathsolicitudsede>//ProcedimientoXunta/SI460A_4/Delegacion/txtIdioma</xpathsolicitudsede>
 				</value>
-			</entry><entry>
+			</entry>
+      <entry>
 				<key>MEDIO_NOTIFICACION</key>
 				<value>
 					<xpathsolicitudsede>//ProcedimientoXunta/SI460A/Notificacion/rblModalidad</xpathsolicitudsede>
 				</value>
-			</entry><entry>
+			</entry>
+      <entry>
 				<key>INTERESADO_NOTIFICACION</key>
 				<value>
 					<xpathsolicitudsede>//ProcedimientoXunta/SI460A/Notificacion/rbNotificar</xpathsolicitudsede>

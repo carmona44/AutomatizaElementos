@@ -2,6 +2,16 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/*TODO List
+ * 
+ * Corregir bloques para que en las rutas de variables genéricas indiquen el nombre del procedimiento
+ * 
+ * Diferenciación entre persona física/jurídica/mixta(actualmente solo física)
+ * 
+ * Crear todos los ficheros XML (actualmente solo elementos.xml)
+ * 
+ */
+
 public class EscritorXml {
 	
 	static final String BLOQUE1 = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\" standalone=\"yes\"?>\r\n" + 
@@ -709,7 +719,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/cmbTipoVia</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/cmbTipoVia</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_TIPOVIA</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -726,7 +736,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtDireccion</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtDireccion</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_NOMBREVIA</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -743,7 +753,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtNumero</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtNumero</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_NUMERO</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -760,7 +770,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtBloque</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtBloque</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_BLOQUE</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -777,7 +787,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtPiso</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtPiso</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_PISO</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -794,7 +804,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtPuerta</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtPuerta</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_PUERTA</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -811,7 +821,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtParroquia</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtParroquia</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_PARROQUIA</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -828,7 +838,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtLugar</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtLugar</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_LUGAR</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -845,7 +855,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtCodigoPostal</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtCodigoPostal</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_CP</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -862,7 +872,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/cmbProvincia</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/cmbProvincia</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_PROVINCIA</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -879,7 +889,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/cmbAyuntamiento</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/cmbAyuntamiento</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_MUNICIPIO</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -896,7 +906,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtLocalidad</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtLocalidad</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_LOCALIDAD</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"							<entry>\r\n" + 
@@ -914,7 +924,7 @@ public class EscritorXml {
 			"										</gl_ES>\r\n" + 
 			"									</descripcion>\r\n" + 
 			"									<tipo>String</tipo>\r\n" + 
-			"									<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtTelefono</xpathSolicitudSede>\r\n" + 
+			"									<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtTelefono</xpathSolicitudSede>\r\n" + 
 			"									<campoFormula>NOTIF_TELEFONO2</campoFormula>\r\n" + 
 			"								</value>\r\n" + 
 			"							</entry>\r\n" + 
@@ -933,7 +943,7 @@ public class EscritorXml {
 			"										</gl_ES>\r\n" + 
 			"									</descripcion>\r\n" + 
 			"									<tipo>String</tipo>\r\n" + 
-			"									<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/txtEmail</xpathSolicitudSede>\r\n" + 
+			"									<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/txtEmail</xpathSolicitudSede>\r\n" + 
 			"									<campoFormula>NOTIF_EMAIL</campoFormula>\r\n" + 
 			"								</value>\r\n" + 
 			"							</entry>\r\n" + 
@@ -978,7 +988,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>Integer</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/rbNotificar</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/rbNotificar</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_INTERESADO_NOTIFICACION</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -996,7 +1006,7 @@ public class EscritorXml {
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>Integer</tipo>\r\n" + 
-			"								<xpathSolicitudSede>/ProcedimientoXunta/SI460A/Notificacion/rblModalidad</xpathSolicitudSede>\r\n" + 
+			"								<xpathSolicitudSede>//ProcedimientoXunta/SI460A/Notificacion/rblModalidad</xpathSolicitudSede>\r\n" + 
 			"								<campoFormula>NOTIF_MEDIO_NOTIFICACION</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
@@ -1041,6 +1051,7 @@ public class EscritorXml {
 	}
 
 	private String escribeElementos(String bloqueEspecificos[]) {
+		FormateaXml buenFormato = new FormateaXml();
 		String elementos = "";
 		
 		elementos += formaCabecera();
@@ -1055,7 +1066,7 @@ public class EscritorXml {
 		elementos += BLOQUE4;
 		elementos += formaElementosSede();
 		
-		return elementos;
+		return buenFormato.getXmlFormateado(elementos, "2");
 	}
 	
 	public String formaCampoEsp(String campos[]) {
@@ -1067,7 +1078,7 @@ public class EscritorXml {
 			campo = "<entry>\r\n" + 
 					"				<key>" + campos[0] + "</key>\r\n" + 
 					"				<value>\r\n" + 
-					"					<xpathsolicitudsede>" + campos[4] + "</xpathsolicitudsede>\r\n" + 
+					"					<xpathsolicitudsede>/" + campos[4] + "</xpathsolicitudsede>\r\n" + 
 					"				</value>\r\n" + 
 					"			</entry>";
 			
@@ -1076,6 +1087,14 @@ public class EscritorXml {
 			campo = "";
 			
 		} else {
+			
+			String ruta = "";
+			
+			if(campos[3].equals("Boolean")) {
+				ruta = "boolean(number(/" + campos[4] + "))";
+			} else {
+				ruta = "/" + campos[4];
+			}
 			
 			campo = "<entry>\r\n" + 
 					"			<key>" + campos[0] + "</key>\r\n" + 
@@ -1089,8 +1108,8 @@ public class EscritorXml {
 					"						<![CDATA[" + campos[1] + "]]>\r\n" + 
 					"					</gl_ES>\r\n" + 
 					"				</descripcion>\r\n" + 
-					"				<tipo>String</tipo>\r\n" + 
-					"				<xpathSolicitudSede>" + campos[4] + "</xpathSolicitudSede>\r\n" + 
+					"				<tipo>" + campos[3] + "</tipo>\r\n" + 
+					"				<xpathSolicitudSede>" + ruta + "</xpathSolicitudSede>\r\n" + 
 					"				<campoFormula>" + campos[5] + "</campoFormula>\r\n" + 
 					"			</value>\r\n" + 
 					"		</entry>";
