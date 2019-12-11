@@ -887,7 +887,53 @@
 				</value>
 			</entry>		
 			
-			<!-- Autorizacións --></elementosorigen>
+			<!-- Autorizacións --><entry>
+				<key>autSviRep</key>
+				<value>
+					<bloque>solicitud</bloque>
+					<descripcion>
+						<es_ES>
+							<![CDATA[Autorización SVI representante]]>
+						</es_ES>
+						<gl_ES>
+							<![CDATA[Autorización SVI representante]]>
+						</gl_ES>
+					</descripcion>
+					<tipo>Boolean</tipo>
+					<tabla>
+						<nombre>ESTRELLA</nombre>
+						<campo>DEN_SVI_REP</campo>
+						<tipo>NUMBER(1)</tipo>
+						<valor/>
+					</tabla>
+					<xpathSolicitudSede>//ProcedimientoXunta/SI452A_2/ComprobacionDatos/tblDatos/FilaA2/cvDeniego</xpathSolicitudSede>
+					<campoFormula>DENSVI_REPRES</campoFormula>
+				</value>
+			</entry>
+      <entry>
+				<key>autSviSol</key>
+				<value>
+					<bloque>solicitud</bloque>
+					<descripcion>
+						<es_ES>
+							<![CDATA[Autorización SVI solicitante]]>
+						</es_ES>
+						<gl_ES>
+							<![CDATA[Autorización SVI solicitante]]>
+						</gl_ES>
+					</descripcion>
+					<tipo>Boolean</tipo>
+					<tabla>
+						<nombre>ESTRELLA</nombre>
+						<campo>DEN_SVI_SOL</campo>
+						<tipo>NUMBER(1)</tipo>
+						<valor/>
+					</tabla>
+					<xpathSolicitudSede>//ProcedimientoXunta/SI452A_2/ComprobacionDatos/tblDatos/FilaA2/cvDeniego</xpathSolicitudSede>
+					<campoFormula>DENSVI_PRESENT</campoFormula>
+				</value>
+			</entry>
+    </elementosorigen>
 	</origen>
 	<sede>
 		<elementossede>

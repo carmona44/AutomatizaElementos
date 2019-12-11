@@ -30,7 +30,7 @@ public class LectorEspecificos {
 			Iterator<Row> rowIterator = sheet.iterator();	
 			Row row;
 			
-			String campos[] = {"","","","","",""};
+			String campos[] = {"","","","","","",""};
 			String bloqueEspecificos[] = new String[sheet.getPhysicalNumberOfRows() - 1];
 			
 			// se recorre cada fila hasta el final

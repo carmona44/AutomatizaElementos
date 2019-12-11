@@ -4,8 +4,6 @@ import java.io.IOException;
 
 /*TODO List
  * 
- * Añadir campos de comprobación de datos
- * 
  * Crear todos los ficheros XML (actualmente solo elementos.xml)
  * 
  */
@@ -1807,6 +1805,7 @@ public class EscritorXml {
 	private String procedimiento;
 	private String persona;
 	private String camposSede[];
+	private String comprobacionDatos;
 	private int index;
 	
 	public EscritorXml(String ano, String procedimiento, String persona){
@@ -1814,6 +1813,7 @@ public class EscritorXml {
 		this.procedimiento = procedimiento;
 		this.persona = persona;
 		this.camposSede = new String[4];
+		this.comprobacionDatos = "";
 		this.index = 0;
 		this.bloque3 = bloque3.replace("SI460A", this.procedimiento);
 		this.bloque4 = bloque4.replace("SI460A", this.procedimiento);
@@ -1835,6 +1835,7 @@ public class EscritorXml {
 		}
 		
 		elementos += (this.persona.equals("Juridica")) ? bloque4Juridica : bloque4;
+		elementos += comprobacionDatos;
 		elementos += formaElementosSede();
 		
 		return buenFormato.getXmlFormateado(elementos, "2");
@@ -1857,7 +1858,38 @@ public class EscritorXml {
 			index++;
 			campo = "";
 			
+		} else if(!campos[6].equals("no")) {
+			System.out.println(campos[6]);
+			campo = "<entry>\r\n" + 
+					"				<key>" + campos[0] + "</key>\r\n" + 
+					"				<value>\r\n" + 
+					"					<bloque>solicitud</bloque>\r\n" + 
+					"					<descripcion>\r\n" + 
+					"						<es_ES>\r\n" + 
+					"							<![CDATA[" + campos[2] + "]]>\r\n" + 
+					"						</es_ES>\r\n" + 
+					"						<gl_ES>\r\n" + 
+					"							<![CDATA[" + campos[1] + "]]>\r\n" + 
+					"						</gl_ES>\r\n" + 
+					"					</descripcion>\r\n" + 
+					"					<tipo>Boolean</tipo>\r\n" + 
+					"					<tabla>\r\n" + 
+					"						<nombre>ESTRELLA</nombre>\r\n" + 
+					"						<campo>" + campos[6] + "</campo>\r\n" + 
+					"						<tipo>NUMBER(1)</tipo>\r\n" + 
+					"						<valor/>\r\n" + 
+					"					</tabla>\r\n" + 
+					"					<xpathSolicitudSede>/" + campos[4] + "</xpathSolicitudSede>\r\n" + 
+					"					<campoFormula>" + campos[5] + "</campoFormula>\r\n" + 
+					"				</value>\r\n" + 
+					"			</entry>";
+			
+			comprobacionDatos += campo;
+			
+			campo = "";
+			
 		} else {
+		
 			
 			String ruta = "";
 			
