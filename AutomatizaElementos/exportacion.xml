@@ -1,0 +1,116 @@
+<configuracionExportacion identificadorExpediente="IDEXP">
+	<bloqueExportacion>
+		<columnaSimple>
+			<nombreColumna>
+				<gl_ES><![CDATA[Número]]></gl_ES>
+				<es_Es><![CDATA[Número]]></es_Es>
+			</nombreColumna>
+			<identificadorColumna>NUMERO_EXPEDIENTE</identificadorColumna>
+		</columnaSimple>
+		<sentencia>
+			SELECT T_NUM_EXP AS NUMERO_EXPEDIENTE, X_EXPE AS IDEXP FROM WANDA_TREWA.TR_EXPEDIENTES
+		</sentencia>
+		<esquema>WANDA_TREWA</esquema>
+	</bloqueExportacion>
+	<bloqueExportacion>
+		<columnaSimple>
+			<nombreColumna>
+				<gl_ES><![CDATA[Data creación]]></gl_ES>
+				<es_Es><![CDATA[Fecha creación]]></es_Es>
+			</nombreColumna>
+			<identificadorColumna>FECHA_CREACION</identificadorColumna>
+		</columnaSimple>
+		<sentencia>
+			SELECT X_EXPE AS IDEXP, TO_CHAR(F_CREACION,'DD/MM/YYYY HH24:MI:SS') AS FECHA_CREACION FROM WANDA_TREWA.TR_EXPEDIENTES
+		</sentencia>
+		<esquema>WANDA_TREWA</esquema>
+	</bloqueExportacion>
+	<bloqueExportacion>
+		<columnaSimple>
+			<nombreColumna>
+				<gl_ES><![CDATA[Número rexistro]]></gl_ES>
+				<es_Es><![CDATA[Número registro]]></es_Es>
+			</nombreColumna>
+			<identificadorColumna>NUMERO_REGISTRO</identificadorColumna>
+		</columnaSimple>
+		<sentencia>
+			SELECT N_REGISTRO AS NUMERO_REGISTRO, X_EXPE AS IDEXP FROM WANDA_TREWA.TR_EXPEDIENTES
+		</sentencia>
+		<esquema>WANDA_TREWA</esquema>
+	</bloqueExportacion>
+	<bloqueExportacion>
+		<columnaSimple>
+			<nombreColumna>
+				<gl_ES><![CDATA[Data rexistro]]></gl_ES>
+				<es_Es><![CDATA[Fecha registro]]></es_Es>
+			</nombreColumna>
+			<identificadorColumna>FECHA_REGISTRO</identificadorColumna>
+		</columnaSimple>
+		<sentencia>
+			SELECT X_EXPE AS IDEXP, TO_CHAR(R.F_REGISTRO,'DD/MM/YYYY HH24:MI') AS FECHA_REGISTRO FROM WANDA_TREWA.TR_EXPEDIENTES E INNER JOIN WANDA_TREWA.TR_REGISTROS R ON E.N_REGISTRO = R.C_REGISTRO
+		</sentencia>
+		<esquema>WANDA_TREWA</esquema>
+	</bloqueExportacion>	
+	<bloqueExportacion>
+		<columnaSimple>
+			<nombreColumna>
+				<gl_ES><![CDATA[Creado]]></gl_ES>
+				<es_Es><![CDATA[Creado]]></es_Es>
+			</nombreColumna>
+			<identificadorColumna>CREADO</identificadorColumna>
+		</columnaSimple>
+		<sentencia>
+			SELECT X_EXPE AS IDEXP,(CASE CREADO_API WHEN 'IRIS' THEN(CASE WHEN N_REGISTRO LIKE 'PR410A%' THEN 'CARGA MASIVA' ELSE 'SEDE' END) ELSE 'MECANIZADO' END) AS CREADO FROM WANDA_TREWA.TR_EXPEDIENTES
+		</sentencia>
+		<esquema>WANDA_TREWA</esquema>
+	</bloqueExportacion>
+	<bloqueExportacion>
+		<columnaSimple>
+			<nombreColumna>
+				<gl_ES><![CDATA[Estado]]></gl_ES>
+				<es_Es><![CDATA[Estado]]></es_Es>
+			</nombreColumna>
+			<identificadorColumna>ESTADO</identificadorColumna>
+		</columnaSimple>
+		<sentencia>
+			SELECT X_EXPE AS IDEXP,F.D_DESCRIPCION AS ESTADO FROM WANDA_TREWA.TR_EXPEDIENTES E INNER JOIN WANDA_TREWA.TR_EXPEDIENTES_EN_FASE EF ON E.X_EXPE = EF.EXPE_X_EXPE INNER JOIN WANDA_TREWA.TR_FASES F ON EF.FASE_X_FASE = F.X_FASE WHERE EF.F_SALIDA IS NULL AND (EF.X_EXEF, E.X_EXPE) IN (SELECT MAX(X_EXEF), EXPE_X_EXPE FROM WANDA_TREWA.TR_EXPEDIENTES_EN_FASE WHERE F_SALIDA IS NULL GROUP BY EXPE_X_EXPE) ORDER BY X_EXPE ASC
+		</sentencia>
+		<esquema>WANDA_TREWA</esquema>
+	</bloqueExportacion>
+	<bloqueExportacion>
+		<columnaSimple>
+			<nombreColumna>
+				<gl_ES><![CDATA[Nome solicitante]]></gl_ES>
+				<es_Es><![CDATA[Nombre solicitante]]></es_Es>
+			</nombreColumna>
+			<identificadorColumna>NOMBRE_SOLICITANTE</identificadorColumna>
+		</columnaSimple>
+		<!-- ****************************************** Eliminar en caso de persoa xurídica ****************************************** -->
+		
+		<columnaSimple>
+			<nombreColumna>
+				<gl_ES><![CDATA[Identificador solicitante]]></gl_ES>
+				<es_Es><![CDATA[Identificador solicitante]]></es_Es>
+			</nombreColumna>
+			<identificadorColumna>IDENTIFICADOR_SOLICITANTE</identificadorColumna>
+		</columnaSimple>
+		<sentencia>
+			SELECT A.ID_EXPEDIENTE AS IDEXP, NOMBRE_SOLICITANTE, IDENTIFICADOR_SOLICITANTE FROM (SELECT T_NUM_EXP AS NUMERO_EXPEDIENTE, X_EXPE AS ID_EXPEDIENTE FROM WANDA_TREWA.TR_EXPEDIENTES)  A LEFT OUTER JOIN(SELECT T_NOMBRE AS NOMBRE_SOLICITANTE, T_IDENTIFICADOR AS IDENTIFICADOR_SOLICITANTE, EXPE_X_EXPE AS ID_EXPEDIENTE FROM WANDA_TREWA.TR_INTERESADOS A INNER JOIN WANDA_TREWA.TR_INTERESADOS_EXPEDIENTE B ON A.X_INTE=B.INTE_X_INTE INNER JOIN WANDA_TREWA.TR_RAZONES_INTERES C ON B.RAIN_X_RAIN=C.X_RAIN WHERE C.D_RAZON_INTERES='PRESENTADOR') B ON A.ID_EXPEDIENTE=B.ID_EXPEDIENTE
+		</sentencia>
+		<esquema>WANDA_TREWA</esquema>
+	</bloqueExportacion>
+	<bloqueExportacion>
+		<columnaSimple>
+			<nombreColumna>
+				<gl_ES><![CDATA[Tipo de resolución]]></gl_ES>
+				<es_Es><![CDATA[Tipo de resolución]]></es_Es>
+			</nombreColumna>
+			<identificadorColumna>TIPO_RESOLUCION</identificadorColumna>
+		</columnaSimple>
+		<sentencia>
+		 SELECT tre.EXPE_X_EXPE AS IDEXP, rt.CODE as TIPO_RESOLUCION FROM WANDA_TREWA.TR_TAREAS_EXPEDIENTE tre inner join WANDA_TREWA.TR_BLOQUES_PERMITIDOS trbp on tre.blpe_x_blpe= trbp.x_blpe inner join WANDA_TREWA.REVISION_TASK_EXECUTION rtex on rtex.TASK_ID = tre.x_taex left join WANDA_TREWA.REVISION_TASK_EVALUATION rtev on rtev.id = rtex.EVALUATION_ID inner join WANDA_TREWA.RESOLUTION_TYPE rt on rt.id = WANDA_TREWA.rtev.RESOLUTION_TYPE_ID WHERE V_ESTADO = 'F' ORDER BY X_TAEX DESC
+
+		</sentencia>
+		<esquema>WANDA_TREWA</esquema>
+	</bloqueExportacion>
+</configuracionExportacion>
