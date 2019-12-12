@@ -5,7 +5,8 @@ public class Principal {
     	
     	LectorEspecificos lector = new LectorEspecificos("CT102A_datosEspecificos.xlsx");
     	
-    	lector.leeDatosEsp();
+    	new InterfazGrafica();
+    	//lector.leeDatosEsp();
     	
     }
 }
