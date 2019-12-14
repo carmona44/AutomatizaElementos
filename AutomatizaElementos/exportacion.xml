@@ -2,8 +2,8 @@
 	<bloqueExportacion>
 		<columnaSimple>
 			<nombreColumna>
-				<gl_ES><![CDATA[Número]]></gl_ES>
-				<es_Es><![CDATA[Número]]></es_Es>
+				<gl_ES><![CDATA[Nï¿½mero]]></gl_ES>
+				<es_Es><![CDATA[Nï¿½mero]]></es_Es>
 			</nombreColumna>
 			<identificadorColumna>NUMERO_EXPEDIENTE</identificadorColumna>
 		</columnaSimple>
@@ -15,8 +15,8 @@
 	<bloqueExportacion>
 		<columnaSimple>
 			<nombreColumna>
-				<gl_ES><![CDATA[Data creación]]></gl_ES>
-				<es_Es><![CDATA[Fecha creación]]></es_Es>
+				<gl_ES><![CDATA[Data creaciï¿½n]]></gl_ES>
+				<es_Es><![CDATA[Fecha creaciï¿½n]]></es_Es>
 			</nombreColumna>
 			<identificadorColumna>FECHA_CREACION</identificadorColumna>
 		</columnaSimple>
@@ -28,8 +28,8 @@
 	<bloqueExportacion>
 		<columnaSimple>
 			<nombreColumna>
-				<gl_ES><![CDATA[Número rexistro]]></gl_ES>
-				<es_Es><![CDATA[Número registro]]></es_Es>
+				<gl_ES><![CDATA[Nï¿½mero rexistro]]></gl_ES>
+				<es_Es><![CDATA[Nï¿½mero registro]]></es_Es>
 			</nombreColumna>
 			<identificadorColumna>NUMERO_REGISTRO</identificadorColumna>
 		</columnaSimple>
@@ -85,7 +85,7 @@
 			</nombreColumna>
 			<identificadorColumna>NOMBRE_SOLICITANTE</identificadorColumna>
 		</columnaSimple>
-		<!-- ****************************************** Eliminar en caso de persoa xurídica ****************************************** -->
+		<!-- ****************************************** Eliminar en caso de persoa xurï¿½dica ****************************************** -->
 		
 		<columnaSimple>
 			<nombreColumna>
@@ -102,8 +102,8 @@
 	<bloqueExportacion>
 		<columnaSimple>
 			<nombreColumna>
-				<gl_ES><![CDATA[Tipo de resolución]]></gl_ES>
-				<es_Es><![CDATA[Tipo de resolución]]></es_Es>
+				<gl_ES><![CDATA[Tipo de resoluciï¿½n]]></gl_ES>
+				<es_Es><![CDATA[Tipo de resoluciï¿½n]]></es_Es>
 			</nombreColumna>
 			<identificadorColumna>TIPO_RESOLUCION</identificadorColumna>
 		</columnaSimple>

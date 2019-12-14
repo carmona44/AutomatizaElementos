@@ -1,3 +1,4 @@
+import javax.swing.JFrame;
 
 public class Principal {
 
@@ -5,7 +6,10 @@ public class Principal {
     	
     	LectorEspecificos lector = new LectorEspecificos("CT102A_datosEspecificos.xlsx");
     	
-    	new InterfazGrafica();
+    	InterfazGrafica interfaz = new InterfazGrafica();
+    	
+    	interfaz.setVisible(true);
+    	interfaz.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     	//lector.leeDatosEsp();
     	
     }

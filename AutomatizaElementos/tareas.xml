@@ -16,7 +16,7 @@
 			</value>
 		</entry>	
 		
-		<!-- *********************************** Pestana resumo para persoa xurídica *********************************** -->
+		<!-- *********************************** Pestana resumo para persoa xurï¿½dica *********************************** -->
 		<entry>
 			<key>PESTANA_RES</key>
 			<value>
@@ -28,7 +28,7 @@
 			</value>
 		</entry>
 		
-		<!-- *********************************** Pestana resumo para persoa física *********************************** -->
+		<!-- *********************************** Pestana resumo para persoa fï¿½sica *********************************** -->
 		<entry>
 			<key>PESTANA_RES</key>
 			<value>
@@ -56,7 +56,7 @@
 	<configuracionFormularios>
 		<formatoFormularios>
 			
-			<!-- Pestana resumo para persoa física ou mixta -->
+			<!-- Pestana resumo para persoa fï¿½sica ou mixta -->
 			<entry>
 				<key>formularioPestanaResumen</key>
 				<value>
@@ -100,8 +100,8 @@
 									<value>
 										<idDatoEspecifico>solicitante.identificador</idDatoEspecifico>
 										<etiqueta>
-											<es_ES><![CDATA[Número documento]]></es_ES>
-											<gl_ES><![CDATA[Número documento]]></gl_ES>
+											<es_ES><![CDATA[Nï¿½mero documento]]></es_ES>
+											<gl_ES><![CDATA[Nï¿½mero documento]]></gl_ES>
 										</etiqueta>
 										<tipoComponente>TEXTO</tipoComponente>
 										<tamano>30</tamano>
@@ -114,8 +114,8 @@
 					</bloque>
 					<bloque>
 						<etiqueta>
-							<es_ES><![CDATA[Datos de la revisión]]></es_ES>
-							<gl_ES><![CDATA[Datos da revisión]]></gl_ES>
+							<es_ES><![CDATA[Datos de la revisiï¿½n]]></es_ES>
+							<gl_ES><![CDATA[Datos da revisiï¿½n]]></gl_ES>
 						</etiqueta>
 						<contenedor>
 							<elementos>
@@ -124,8 +124,8 @@
 									<value>
 										<idDatoEspecifico>revision.resultado</idDatoEspecifico>
 										<etiqueta>
-											<es_ES><![CDATA[Resultado de la revisión]]></es_ES>
-											<gl_ES><![CDATA[Resultado da revisión]]></gl_ES>
+											<es_ES><![CDATA[Resultado de la revisiï¿½n]]></es_ES>
+											<gl_ES><![CDATA[Resultado da revisiï¿½n]]></gl_ES>
 										</etiqueta>
 										<tipoComponente>TEXTO</tipoComponente>
 										<tamano>30</tamano>
@@ -138,8 +138,8 @@
 									<value>
 										<idDatoEspecifico>revision.tipoResolucion</idDatoEspecifico>
 										<etiqueta>
-											<es_ES><![CDATA[Tipo de resolución]]></es_ES>
-											<gl_ES><![CDATA[Tipo de resolución]]></gl_ES>
+											<es_ES><![CDATA[Tipo de resoluciï¿½n]]></es_ES>
+											<gl_ES><![CDATA[Tipo de resoluciï¿½n]]></gl_ES>
 										</etiqueta>
 										<tipoComponente>TEXTO</tipoComponente>
 										<tamano>30</tamano>

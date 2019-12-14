@@ -127,7 +127,7 @@
 					</implementacion>
 				</value>
 			</entry>
-			<!-- Datos de revisión-->
+			<!-- Datos de revisiï¿½n-->
 			<entry>
 				<key>revision</key>
 				<value>
@@ -150,10 +150,10 @@
 								<bloque>solicitud</bloque>
 								<descripcion>
 									<es_ES>
-										<![CDATA[Resultado revisión]]>
+										<![CDATA[Resultado revisiï¿½n]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Resultado revisión]]>
+										<![CDATA[Resultado revisiï¿½n]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
@@ -167,10 +167,10 @@
 								<bloque>solicitud</bloque>
 								<descripcion>
 									<es_ES>
-										<![CDATA[Tipo resolución]]>
+										<![CDATA[Tipo resoluciï¿½n]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Tipo resolución]]>
+										<![CDATA[Tipo resoluciï¿½n]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
@@ -178,7 +178,7 @@
 								<campoFormula/>
 							</value>
 						</entry>
-						<!-- Datos específicos --><entry>
+						<!-- Datos especï¿½ficos --><entry>
 			<key>nombreDirector</key>
 			<value>
 				<bloque>solicitud</bloque>
@@ -269,10 +269,10 @@
 				<bloque>solicitud</bloque>
 				<descripcion>
 					<es_ES>
-						<![CDATA[Sabe inglés]]>
+						<![CDATA[Sabe inglÃ©s]]>
 					</es_ES>
 					<gl_ES>
-						<![CDATA[Sabe inglés]]>
+						<![CDATA[Sabe inglÃ©s]]>
 					</gl_ES>
 				</descripcion>
 				<tipo>Boolean</tipo>
@@ -321,7 +321,7 @@
 						
 						
 				
-						<!-- Fin datos específicos -->			
+						<!-- Fin datos especï¿½ficos -->			
 
 					</elementosLista>
 					<implementacion>
@@ -331,17 +331,17 @@
 					</implementacion>
 				</value>
 			</entry>
-			<!-- Dirección del solicitante -->
+			<!-- Direcciï¿½n del solicitante -->
 			<entry>
 				<key>direccionSolicitante</key>
 				<value>
 					<bloque>solicitud</bloque>
 					<descripcion>
 						<es_ES>
-							<![CDATA[Dirección solicitante]]>
+							<![CDATA[Direcciï¿½n solicitante]]>
 						</es_ES>
 						<gl_ES>
-							<![CDATA[Dirección solicitante]]>
+							<![CDATA[Direcciï¿½n solicitante]]>
 						</gl_ES>
 					</descripcion>
 					<tipo>
@@ -354,10 +354,10 @@
 								<bloque>solicitud</bloque>
 								<descripcion>
 									<es_ES>
-										<![CDATA[Tipo vía solicitante]]>
+										<![CDATA[Tipo vï¿½a solicitante]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Tipo vía solicitante]]>
+										<![CDATA[Tipo vï¿½a solicitante]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
@@ -371,10 +371,10 @@
 								<bloque>solicitud</bloque>
 								<descripcion>
 									<es_ES>
-										<![CDATA[Nombre vía solicitante]]>
+										<![CDATA[Nombre vï¿½a solicitante]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Nome vía solicitante]]>
+										<![CDATA[Nome vï¿½a solicitante]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
@@ -388,10 +388,10 @@
 								<bloque>solicitud</bloque>
 								<descripcion>
 									<es_ES>
-										<![CDATA[Número solicitante]]>
+										<![CDATA[Nï¿½mero solicitante]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Número solicitante]]>
+										<![CDATA[Nï¿½mero solicitante]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
@@ -558,10 +558,10 @@
 								<bloque>solicitud</bloque>
 								<descripcion>
 									<es_ES>
-										<![CDATA[Teléfono solicitante]]>
+										<![CDATA[Telï¿½fono solicitante]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Teléfono solicitante]]>
+										<![CDATA[Telï¿½fono solicitante]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
@@ -569,7 +569,7 @@
 								<campoFormula>SOLI1_TELEFONO</campoFormula>
 							</value>
 						</entry>
-						<!-- ******************** Eliminar no caso de persoa xurídica ******************** -->
+						<!-- ******************** Eliminar no caso de persoa xurï¿½dica ******************** -->
 						<entry>
 							<key>movil</key>
 							<value>
@@ -741,17 +741,17 @@
 				</value>
 			</entry>
 
-			<!-- Datos de notificacion en caso de persona mixta o física -->
+			<!-- Datos de notificacion en caso de persona mixta o fï¿½sica -->
 
 
-			<!-- Dirección de notificación en caso de persona jurídica -->
+			<!-- Direcciï¿½n de notificaciï¿½n en caso de persona jurï¿½dica -->
 			<entry>
 				<key>direccionRepresentante</key>
 				<value>
 					<bloque>solicitud</bloque>
 					<descripcion>
 						<es_ES>
-							<![CDATA[Dirección representante]]>
+							<![CDATA[Direcciï¿½n representante]]>
 						</es_ES>
 						<gl_ES>
 							<![CDATA[Enderezo representante]]>
@@ -769,10 +769,10 @@
 								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
-										<![CDATA[Telefono de notificación]]>
+										<![CDATA[Telefono de notificaciï¿½n]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Telefono de notificación]]>
+										<![CDATA[Telefono de notificaciï¿½n]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
@@ -788,10 +788,10 @@
 								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
-										<![CDATA[Email de notificación]]>
+										<![CDATA[Email de notificaciï¿½n]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Email de notificación]]>
+										<![CDATA[Email de notificaciï¿½n]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
@@ -813,10 +813,10 @@
 					<bloque>solicitud</bloque>
 					<descripcion>
 						<es_ES>
-							<![CDATA[Datos Notificación]]>
+							<![CDATA[Datos Notificaciï¿½n]]>
 						</es_ES>
 						<gl_ES>
-							<![CDATA[Datos Notificación]]>
+							<![CDATA[Datos Notificaciï¿½n]]>
 						</gl_ES>
 					</descripcion>
 					<tipo>
@@ -831,10 +831,10 @@
 								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
-										<![CDATA[Notifíquese a]]>
+										<![CDATA[Notifï¿½quese a]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Notifíquese a]]>
+										<![CDATA[Notifï¿½quese a]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>Integer</tipo>
@@ -849,10 +849,10 @@
 								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
-										<![CDATA[Solicita canal electrónico]]>
+										<![CDATA[Solicita canal electrï¿½nico]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Solicita canle electrónico]]>
+										<![CDATA[Solicita canle electrï¿½nico]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>Integer</tipo>
@@ -867,10 +867,10 @@
 								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
-										<![CDATA[Fecha elección medio]]>
+										<![CDATA[Fecha elecciï¿½n medio]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Data elección medio]]>
+										<![CDATA[Data elecciï¿½n medio]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>Date</tipo>
@@ -887,16 +887,16 @@
 				</value>
 			</entry>		
 			
-			<!-- Autorizacións --><entry>
+			<!-- Autorizaciï¿½ns --><entry>
 				<key>autSviRep</key>
 				<value>
 					<bloque>solicitud</bloque>
 					<descripcion>
 						<es_ES>
-							<![CDATA[Autorización SVI representante]]>
+							<![CDATA[AutorizaciÃ³n SVI representante]]>
 						</es_ES>
 						<gl_ES>
-							<![CDATA[Autorización SVI representante]]>
+							<![CDATA[AutorizaciÃ³n SVI representante]]>
 						</gl_ES>
 					</descripcion>
 					<tipo>Boolean</tipo>
@@ -916,10 +916,10 @@
 					<bloque>solicitud</bloque>
 					<descripcion>
 						<es_ES>
-							<![CDATA[Autorización SVI solicitante]]>
+							<![CDATA[AutorizaciÃ³n SVI solicitante]]>
 						</es_ES>
 						<gl_ES>
-							<![CDATA[Autorización SVI solicitante]]>
+							<![CDATA[AutorizaciÃ³n SVI solicitante]]>
 						</gl_ES>
 					</descripcion>
 					<tipo>Boolean</tipo>
