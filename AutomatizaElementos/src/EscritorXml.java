@@ -2306,7 +2306,7 @@ public class EscritorXml {
 		String elementos = "";
 		
 		elementos += formaCabecera();
-		elementos += (this.persona.equals("Juridica")) ? bloque3Juridica : bloque3;
+		elementos += (this.persona.equals("Jurídica")) ? bloque3Juridica : bloque3;
 		
 		for(int i=0; i<bloqueEspecificos.length; i++) {
 			if(!bloqueEspecificos[i].equals("")) {
@@ -2314,7 +2314,7 @@ public class EscritorXml {
 			}
 		}
 		
-		elementos += (this.persona.equals("Juridica")) ? bloque4Juridica : bloque4;
+		elementos += (this.persona.equals("Jurídica")) ? bloque4Juridica : bloque4;
 		elementos += comprobacionDatos;
 		elementos += formaElementosSede();
 		
@@ -2403,7 +2403,7 @@ public class EscritorXml {
 	
 	public void generaXml(String bloqueEspecificos[]) {
 
-		String tareas = (this.persona.equals("Juridica")) ? this.TAREASJURIDICA : this.TAREASFISICA;
+		String tareas = (this.persona.equals("Jurídica")) ? this.TAREASJURIDICA : this.TAREASFISICA;
 		this.archivos = new String[][]{{"configuracion.xml", this.CONFIGURACION}, {"correo.xml", this.correo}, {"tareas.xml", tareas}, {"exportacion.xml", this.EXPORTACION}};
 		
 		try {
