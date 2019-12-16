@@ -1,5 +1,10 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class InterfazGrafica extends JFrame{
 	
@@ -63,6 +68,8 @@ public class InterfazGrafica extends JFrame{
 		generar = new JButton("Generar XMLs");
 		generar.setBounds(300,375,150,30);
 		
+		
+		//Características y añadido de componentes a la capa
 		setBounds(anchuraP / 4, alturaP / 4, anchuraP / 2, alturaP / 2);
 		setTitle("ZEUS - Generador XMLs");
 		
@@ -81,6 +88,31 @@ public class InterfazGrafica extends JFrame{
 		
 		capa.setLayout(null);
 		add(capa);
+		
+		//Acciones a realizar por los dos botones
+		examinar.addActionListener(new ActionListener(){
+            public void actionPerformed (ActionEvent e){
+            	fc = new JFileChooser();
+            	FileNameExtensionFilter filtro = new FileNameExtensionFilter("*.xlsx", "xlsx");
+            	fc.setFileFilter(filtro);
+            	int seleccion = fc.showOpenDialog(capa);
+            	
+            	if(seleccion == JFileChooser.APPROVE_OPTION){
+            		File fichero = fc.getSelectedFile();
+            		rutaFichero.setText(fichero.getAbsolutePath());
+            	}
+            }
+        });
+		
+		generar.addActionListener(new ActionListener(){
+            public void actionPerformed (ActionEvent e){
+            	if(!rutaFichero.getText().equals("") && !ano.getText().equals("") && !codigo.getText().equals("")){
+            		
+            	} else {
+            		System.out.println("Faltan datos necesarios por indicar.");
+            	}
+            }
+        });
 	}
 	
 }
