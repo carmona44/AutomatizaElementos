@@ -10,16 +10,19 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class LectorEspecificos {
 	
-	private String nombreArchivo;
+	private String rutaFichero, procedimiento, ano, tipoPersona;
 	
-	public LectorEspecificos(String nombre){
-		this.nombreArchivo = nombre;
+	public LectorEspecificos(String ruta, String procedimiento, String ano, String tipoPersona){
+		this.rutaFichero = ruta;
+		this.procedimiento = procedimiento;
+		this.ano = ano;
+		this.tipoPersona = tipoPersona;
 	}
 	
 	public void leeDatosEsp() {
 		
-		try (FileInputStream file = new FileInputStream(new File(nombreArchivo))) {
-			EscritorXml escritor = new EscritorXml("2019", "ED433A", "Juridica");
+		try (FileInputStream file = new FileInputStream(new File(rutaFichero))) {
+			EscritorXml escritor = new EscritorXml(ano, procedimiento, tipoPersona);
 			// leer archivo excel
 			XSSFWorkbook worbook = new XSSFWorkbook(file);
 			
@@ -46,7 +49,7 @@ public class LectorEspecificos {
 					//se recorre cada celda				
 					while (cellIterator.hasNext()) {
 						
-						// se obtiene la celda en específico y se la imprime
+						// se obtiene la celda en especï¿½fico y se la imprime
 						cell = cellIterator.next();
 						campos[cell.getColumnIndex()] = cell.getStringCellValue();
 					}

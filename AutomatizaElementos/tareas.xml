@@ -37,7 +37,7 @@
 				<query></query>
 				<queryselect>
 				</queryselect>
-				<elementos>solicitante.nombre,solicitante.identificador,solicitante.tipoidentificador,revision.resultado,revision.tipoResolucion</elementos>
+				<elementos>solicitante.nombre,solicitante.apellido1,solicitante.apellido2,solicitante.identificador,solicitante.tipoidentificador,revision.resultado,revision.tipoResolucion</elementos>
 			</value>
 		</entry>
 
@@ -72,8 +72,36 @@
 									<value>
 										<idDatoEspecifico>solicitante.nombre</idDatoEspecifico>
 										<etiqueta>
-											<es_ES><![CDATA[RAZON SOCIAL]]></es_ES>
-											<gl_ES><![CDATA[RAZON SOCIAL]]></gl_ES>
+											<es_ES><![CDATA[Nombre/Raz�n social]]></es_ES>
+											<gl_ES><![CDATA[Nome/Raz�n social]]></gl_ES>
+										</etiqueta>
+										<tipoComponente>TEXTO</tipoComponente>
+										<tamano>30</tamano>
+										<tamanoEtiqueta>60</tamanoEtiqueta>
+										<tamanoComponente>100</tamanoComponente>
+									</value>
+								</entry>
+								<entry>
+									<key>apellido1</key>
+									<value>
+										<idDatoEspecifico>solicitante.apellido1</idDatoEspecifico>
+										<etiqueta>
+											<es_ES><![CDATA[Primer apellido]]></es_ES>
+											<gl_ES><![CDATA[Primeiro apelido]]></gl_ES>
+										</etiqueta>
+										<tipoComponente>TEXTO</tipoComponente>
+										<tamano>30</tamano>
+										<tamanoEtiqueta>60</tamanoEtiqueta>
+										<tamanoComponente>100</tamanoComponente>
+									</value>
+								</entry>
+								<entry>
+									<key>apellido2</key>
+									<value>
+										<idDatoEspecifico>solicitante.apellido2</idDatoEspecifico>
+										<etiqueta>
+											<es_ES><![CDATA[Segundo apellido]]></es_ES>
+											<gl_ES><![CDATA[Segundo apelido]]></gl_ES>
 										</etiqueta>
 										<tipoComponente>TEXTO</tipoComponente>
 										<tamano>30</tamano>
@@ -112,7 +140,7 @@
 							</elementos>	
 						</contenedor>
 					</bloque>
-					<bloque>
+						<bloque>
 						<etiqueta>
 							<es_ES><![CDATA[Datos de la revisi�n]]></es_ES>
 							<gl_ES><![CDATA[Datos da revisi�n]]></gl_ES>

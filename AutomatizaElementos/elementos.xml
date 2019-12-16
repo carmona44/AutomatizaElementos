@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modelo>
-	<codProcedimiento>ED433A</codProcedimiento>
-	<convocatoria>2019</convocatoria>
+	<codProcedimiento>PR948A</codProcedimiento>
+	<convocatoria>2020</convocatoria>
 	<origen>
 		<elementosorigen>
 			<entry>
@@ -80,8 +80,42 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtNombre</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtNombre</xpathSolicitudSede>
 								<campoFormula>SOLI1_NOMBRE</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>apellido1</key>
+							<value>
+								<bloque>generico</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Primer apellido]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Apelido segundo]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtApel1</xpathSolicitudSede>
+								<campoFormula>SOLI1_APELLIDO1</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>apellido2</key>
+							<value>
+								<bloque>generico</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Segundo apellido]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Segundo apelido]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtApel2</xpathSolicitudSede>
+								<campoFormula>SOLI1_APELLIDO2</campoFormula>
 							</value>
 						</entry>
 						<entry>
@@ -100,7 +134,7 @@
 								<xpathSolicitudSede/>
 								<campoFormula>SOLI1_TIPOIDENT</campoFormula>
 							</value>
-						</entry> 
+						</entry>
 						<entry>
 							<key>identificador</key>
 							<value>
@@ -114,11 +148,10 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtNifCif</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtNifCif</xpathSolicitudSede>
 								<campoFormula>SOLI1_NUMIDENT</campoFormula>
 							</value>
 						</entry>
-
 					</elementosLista>
 					<implementacion>
 						<clase>es.xunta.amtega.ptwanda.accesotrewa.interesados.impl.ConsultaInteresadosServiceImpl</clase>
@@ -178,7 +211,8 @@
 								<campoFormula/>
 							</value>
 						</entry>
-						<!-- Datos espec�ficos --><entry>
+						<!-- Datos espec�ficos -->
+<entry>
 			<key>nombreDirector</key>
 			<value>
 				<bloque>solicitud</bloque>
@@ -280,7 +314,8 @@
 				<campoFormula>ESP-englishKnowledge</campoFormula>
 			</value>
 		</entry>
-            <!-- DATOS BANCARIOS -->
+            <!-- datos bancarios -->
+						
 						<entry>
 							<key>titularCuenta</key>
 							<value>
@@ -294,12 +329,10 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/DatosBancarios/txtNombreEntidad</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/DatosBancarios/txtNombreEntidad</xpathSolicitudSede>
 								<campoFormula>ESP-accountHolder</campoFormula>
 							</value>
 						</entry>
-						<!--<xpathSolicitudSede>//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtNombreEntidad[1]</xpathSolicitudSede>-->
-								
 						<entry>
 							<key>numeroCuenta</key>
 							<value>
@@ -313,15 +346,14 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>concat(//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque1,//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque2,//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque3,//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque4,//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque5,//ProcedimientoXunta/ED433A/DatosBancarios/txtBloque6)</xpathSolicitudSede>
+								<xpathSolicitudSede>concat(//ProcedimientoXunta/PR948A/DatosBancarios/txtBloque1,//ProcedimientoXunta/PR948A/DatosBancarios/txtBloque2,//ProcedimientoXunta/PR948A/DatosBancarios/txtBloque3,//ProcedimientoXunta/PR948A/DatosBancarios/txtBloque4,//ProcedimientoXunta/PR948A/DatosBancarios/txtBloque5,//ProcedimientoXunta/PR948A/DatosBancarios/txtBloque6)</xpathSolicitudSede>
 								<campoFormula>ESP-accountNumber</campoFormula>
 							</value>
-						</entry>								<!--<xpathSolicitudSede>concat(//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque1[1],//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque2[1],//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque3[1],//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque4[1],//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque5[1],//ProcedimientoXunta[1]/ED433A[1]/DatosBancarios[1]/txtBloque6[1])</xpathSolicitudSede>-->
-																			
+						</entry>											
+							<!-- Fin datos bancarios -->
+							
 						
-						
-				
-						<!-- Fin datos espec�ficos -->			
+						<!-- FIN Datos espec�ficos -->			
 
 					</elementosLista>
 					<implementacion>
@@ -361,7 +393,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/cmbTipoVia</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/cmbTipoVia</xpathSolicitudSede>
 								<campoFormula>SOLI1_TIPOVIA</campoFormula>
 							</value>
 						</entry>
@@ -378,7 +410,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtDireccion</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtDireccion</xpathSolicitudSede>
 								<campoFormula>SOLI1_NOMBREVIA</campoFormula>
 							</value>
 						</entry>
@@ -395,7 +427,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtNumero</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtNumero</xpathSolicitudSede>
 								<campoFormula>SOLI1_NUMERO</campoFormula>
 							</value>
 						</entry>
@@ -412,7 +444,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtBloque</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtBloque</xpathSolicitudSede>
 								<campoFormula>SOLI1_BLOQUE</campoFormula>
 							</value>
 						</entry>
@@ -429,7 +461,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtPiso</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtPiso</xpathSolicitudSede>
 								<campoFormula>SOLI1_PISO</campoFormula>
 							</value>
 						</entry>
@@ -446,7 +478,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtPuerta</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtPuerta</xpathSolicitudSede>
 								<campoFormula>SOLI1_PUERTA</campoFormula>
 							</value>
 						</entry>
@@ -463,7 +495,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtParroquia</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtParroquia</xpathSolicitudSede>
 								<campoFormula>SOLI1_PARROQUIA</campoFormula>
 							</value>
 						</entry>
@@ -480,7 +512,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtLugar</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtLugar</xpathSolicitudSede>
 								<campoFormula>SOLI1_LUGAR</campoFormula>
 							</value>
 						</entry>
@@ -497,7 +529,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtCodigoPostal</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtCodigoPostal</xpathSolicitudSede>
 								<campoFormula>SOLI1_CP</campoFormula>
 							</value>
 						</entry>
@@ -514,7 +546,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/cmbProvincia</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/cmbProvincia</xpathSolicitudSede>
 								<campoFormula>SOLI1_CODPROV</campoFormula>
 							</value>
 						</entry>
@@ -531,7 +563,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/cmbAyuntamiento</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/cmbAyuntamiento</xpathSolicitudSede>
 								<campoFormula>SOLI1_CODMUNICIPIO</campoFormula>
 							</value>
 						</entry>
@@ -548,7 +580,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtLocalidad</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtLocalidad</xpathSolicitudSede>
 								<campoFormula>SOLI1_LOCALIDAD</campoFormula>
 							</value>
 						</entry>
@@ -565,43 +597,25 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtTelefono</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtTelefono</xpathSolicitudSede>
 								<campoFormula>SOLI1_TELEFONO</campoFormula>
 							</value>
 						</entry>
-						<!-- ******************** Eliminar no caso de persoa xur�dica ******************** -->
 						<entry>
-							<key>movil</key>
+							<key>telefonoMovilSolicitante</key>
 							<value>
 								<bloque>solicitud</bloque>
 								<descripcion>
 									<es_ES>
-										<![CDATA[Email solicitante]]>
+										<![CDATA[Tel�fono m�vil solicitante]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Email solicitante]]>
+										<![CDATA[Tel�fono m�bil solicitante]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtMovil</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtMovil</xpathSolicitudSede>
 								<campoFormula>SOLI1_TELEFONO2</campoFormula>
-							</value>
-						</entry>
-						<entry>
-							<key>fax</key>
-							<value>
-								<bloque>solicitud</bloque>
-								<descripcion>
-									<es_ES>
-										<![CDATA[Fax solicitante]]>
-									</es_ES>
-									<gl_ES>
-										<![CDATA[Fax solicitante]]>
-									</gl_ES>
-								</descripcion>
-								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtFax</xpathSolicitudSede>
-								<campoFormula>SOLI1_FAX</campoFormula>
 							</value>
 						</entry>
 						<entry>
@@ -617,7 +631,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Entidad/txtEmail</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Entidad/txtEmail</xpathSolicitudSede>
 								<campoFormula>SOLI1_EMAIL</campoFormula>
 							</value>
 						</entry>
@@ -660,7 +674,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Declarante/txtNombre</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Declarante/txtNombre</xpathSolicitudSede>
 								<campoFormula>REPR1_NOMBRE</campoFormula>
 							</value>
 						</entry>
@@ -677,7 +691,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Declarante/txtApel1</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Declarante/txtApel1</xpathSolicitudSede>
 								<campoFormula>REPR1_APELLIDO1</campoFormula>
 							</value>
 						</entry>
@@ -694,7 +708,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Declarante/txtApel2</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Declarante/txtApel2</xpathSolicitudSede>
 								<campoFormula>REPR1_APELLIDO2</campoFormula>
 							</value>
 						</entry>
@@ -728,7 +742,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Declarante/txtNifCif</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Declarante/txtNifCif</xpathSolicitudSede>
 								<campoFormula>REPR1_NUMIDENT</campoFormula>
 							</value>
 						</entry>
@@ -740,11 +754,7 @@
 					</implementacion>
 				</value>
 			</entry>
-
-			<!-- Datos de notificacion en caso de persona mixta o f�sica -->
-
-
-			<!-- Direcci�n de notificaci�n en caso de persona jur�dica -->
+			<!-- Direcci�n de notificaci�n-->
 			<entry>
 				<key>direccionRepresentante</key>
 				<value>
@@ -762,42 +772,246 @@
 					</tipo>
 					<elementosLista>
 						<entry>
-							<!-- OK -->
-							<key>telefonoMovil</key>
+							<key>tipovia</key>
 							<value>
 								<bloque>solicitud</bloque>
-								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
-										<![CDATA[Telefono de notificaci�n]]>
+										<![CDATA[Tipo v�a notificaci�n]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Telefono de notificaci�n]]>
+										<![CDATA[Tipo v�a notificaci�n]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtTelefono</xpathSolicitudSede>
-								<campoFormula>NOTIF_TELEFONO2</campoFormula>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/cmbTipoVia</xpathSolicitudSede>
+								<campoFormula>NOTIF_TIPOVIA</campoFormula>
 							</value>
 						</entry>
 						<entry>
-							<!-- OK -->
-							<key>email</key>
+							<key>nombreVia</key>
 							<value>
 								<bloque>solicitud</bloque>
-								<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
-										<![CDATA[Email de notificaci�n]]>
+										<![CDATA[Nombre v�a notificaci�n]]>
 									</es_ES>
 									<gl_ES>
-										<![CDATA[Email de notificaci�n]]>
+										<![CDATA[Nome v�a notificaci�n]]>
 									</gl_ES>
 								</descripcion>
 								<tipo>String</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/txtEmail</xpathSolicitudSede>
-								<campoFormula>NOTIF_EMAIL</campoFormula>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtDireccion</xpathSolicitudSede>
+								<campoFormula>NOTIF_NOMBREVIA</campoFormula>
 							</value>
+						</entry>
+						<entry>
+							<key>numero</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[N�mero notificaci�n]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[N�mero notificaci�n]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtNumero</xpathSolicitudSede>
+								<campoFormula>NOTIF_NUMERO</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>escalera</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Escalera notificaci�n]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Escaleira notificaci�n]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtBloque</xpathSolicitudSede>
+								<campoFormula>NOTIF_BLOQUE</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>piso</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Piso notificaci�n]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Piso notificaci�n]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtPiso</xpathSolicitudSede>
+								<campoFormula>NOTIF_PISO</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>puerta</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Puerta notificaci�n]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Porta notificaci�n]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtPuerta</xpathSolicitudSede>
+								<campoFormula>NOTIF_PUERTA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>parroquia</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Parroquia Notificaci�n]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Parroquia Notificaci�n]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtParroquia</xpathSolicitudSede>
+								<campoFormula>NOTIF_PARROQUIA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>lugar</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[lugar Notificaci�n]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[lugar Notificaci�n]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtLugar</xpathSolicitudSede>
+								<campoFormula>NOTIF_LUGAR</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>codigoPostal</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[CP notificaci�n]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[CP notificaci�n]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtCodigoPostal</xpathSolicitudSede>
+								<campoFormula>NOTIF_CP</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>provincia</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Provincia notificaci�n]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Provincia notificaci�n]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/cmbProvincia</xpathSolicitudSede>
+								<campoFormula>NOTIF_PROVINCIA</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>municipio</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Municipio notificaci�n]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Concello notificaci�n]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/cmbAyuntamiento</xpathSolicitudSede>
+								<campoFormula>NOTIF_MUNICIPIO</campoFormula>
+							</value>
+						</entry>
+						<entry>
+							<key>ciudad</key>
+							<value>
+								<bloque>solicitud</bloque>
+								<descripcion>
+									<es_ES>
+										<![CDATA[Localidad notificaci�n]]>
+									</es_ES>
+									<gl_ES>
+										<![CDATA[Localidade notificaci�n]]>
+									</gl_ES>
+								</descripcion>
+								<tipo>String</tipo>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtLocalidad</xpathSolicitudSede>
+								<campoFormula>NOTIF_LOCALIDAD</campoFormula>
+							</value>
+							<entry>
+								<!-- OK -->
+								<key>telefonoMovil</key>
+								<value>
+									<bloque>solicitud</bloque>
+									<!-- generico, solicitud, tramitacion -->
+									<descripcion>
+										<es_ES>
+											<![CDATA[Telefono de notificaci�n]]>
+										</es_ES>
+										<gl_ES>
+											<![CDATA[Telefono de notificaci�n]]>
+										</gl_ES>
+									</descripcion>
+									<tipo>String</tipo>
+									<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtTelefono</xpathSolicitudSede>
+									<campoFormula>NOTIF_TELEFONO2</campoFormula>
+								</value>
+							</entry>
+							<entry>
+								<!-- OK -->
+								<key>email</key>
+								<value>
+									<bloque>solicitud</bloque>
+									<!-- generico, solicitud, tramitacion -->
+									<descripcion>
+										<es_ES>
+											<![CDATA[Email de notificaci�n]]>
+										</es_ES>
+										<gl_ES>
+											<![CDATA[Email de notificaci�n]]>
+										</gl_ES>
+									</descripcion>
+									<tipo>String</tipo>
+									<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/txtEmail</xpathSolicitudSede>
+									<campoFormula>NOTIF_EMAIL</campoFormula>
+								</value>
+							</entry>
 						</entry>
 					</elementosLista>
 					<implementacion>
@@ -807,6 +1021,7 @@
 					</implementacion>
 				</value>
 			</entry>	
+
 			<entry>
 				<key>datosExpediente</key>
 				<value>
@@ -824,11 +1039,11 @@
 					</tipo>
 					<elementosLista>
 						<entry>
-							<!-- OK -->
+<!-- OK -->
 							<key>interesadoNotificar</key>
 							<value>
 								<bloque>generico</bloque>
-								<!-- generico, solicitud, tramitacion -->
+<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
 										<![CDATA[Notif�quese a]]>
@@ -838,7 +1053,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>Integer</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/rbNotificar</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/rbNotificar</xpathSolicitudSede>
 								<campoFormula>NOTIF_INTERESADO_NOTIFICACION</campoFormula>
 							</value>
 						</entry>
@@ -846,7 +1061,7 @@
 							<key>medioNotificacion</key>
 							<value>
 								<bloque>solicitud</bloque>
-								<!-- generico, solicitud, tramitacion -->
+<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
 										<![CDATA[Solicita canal electr�nico]]>
@@ -856,7 +1071,7 @@
 									</gl_ES>
 								</descripcion>
 								<tipo>Integer</tipo>
-								<xpathSolicitudSede>//ProcedimientoXunta/ED433A/Notificacion/rblModalidad</xpathSolicitudSede>
+								<xpathSolicitudSede>//ProcedimientoXunta/PR948A/Notificacion/rblModalidad</xpathSolicitudSede>
 								<campoFormula>NOTIF_MEDIO_NOTIFICACION</campoFormula>
 							</value>
 						</entry>
@@ -864,7 +1079,7 @@
 							<key>fechaMedioNotificacion</key>
 							<value>
 								<bloque>solicitud</bloque>
-								<!-- generico, solicitud, tramitacion -->
+<!-- generico, solicitud, tramitacion -->
 								<descripcion>
 									<es_ES>
 										<![CDATA[Fecha elecci�n medio]]>
@@ -885,9 +1100,8 @@
 						<parametros>{idExpediente}</parametros>
 					</implementacion>
 				</value>
-			</entry>		
-			
-			<!-- Autorizaci�ns --><entry>
+			</entry>				
+		<!-- Autorizaci�ns --><entry>
 				<key>autSviRep</key>
 				<value>
 					<bloque>solicitud</bloque>

@@ -1,5 +1,5 @@
-<correo procedimiento="ED433A">
-    <fase nombre="ED433A_Informes">
+<correo procedimiento="PR948A">
+    <fase nombre="PR948A_Informes">
         <destinatario>PRESENT</destinatario>
         <asunto_gl></asunto_gl>
         <mensaje_gl></mensaje_gl>

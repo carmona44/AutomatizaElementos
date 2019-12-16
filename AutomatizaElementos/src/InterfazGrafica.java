@@ -92,7 +92,7 @@ public class InterfazGrafica extends JFrame{
 		//Acciones a realizar por los dos botones
 		examinar.addActionListener(new ActionListener(){
             public void actionPerformed (ActionEvent e){
-            	fc = new JFileChooser();
+            	fc = new JFileChooser("./");
             	FileNameExtensionFilter filtro = new FileNameExtensionFilter("*.xlsx", "xlsx");
             	fc.setFileFilter(filtro);
             	int seleccion = fc.showOpenDialog(capa);
@@ -106,8 +106,17 @@ public class InterfazGrafica extends JFrame{
 		
 		generar.addActionListener(new ActionListener(){
             public void actionPerformed (ActionEvent e){
-            	if(!rutaFichero.getText().equals("") && !ano.getText().equals("") && !codigo.getText().equals("")){
-            		
+            	if(!rutaFichero.getText().equals("") && !ano.getText().equals("") && !codigo.getText().equals("") && tipoPersona.getSelection() != null){
+            		String persona = "";
+            		if(personaFisica.isSelected()){
+            			persona = personaFisica.getText();
+            		} else if(personaJuridica.isSelected()){
+            			persona = personaJuridica.getText();
+            		} else {
+            			persona = personaMixta.getText();
+            		}
+            		LectorEspecificos lector = new LectorEspecificos(rutaFichero.getText(), codigo.getText(), ano.getText(), persona);
+            		lector.leeDatosEsp();
             	} else {
             		System.out.println("Faltan datos necesarios por indicar.");
             	}
