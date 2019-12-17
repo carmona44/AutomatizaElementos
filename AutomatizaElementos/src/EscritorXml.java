@@ -5,12 +5,6 @@ import java.io.IOException;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-/*TODO List
- * 
- * Que haga el formateo 100% correcto
- * 
- */
-
 public class EscritorXml {
 	
 	private final String CONFIGURACION = "<configuracion>\r\n" + 
@@ -884,8 +878,8 @@ public class EscritorXml {
 			"								<campoFormula/>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
-			"						<!-- Datos espec�ficos -->";
-	private String bloque4 = "<!-- datos bancarios -->\r\n" + 
+			"						<!-- Datos espec�ficos -->\r\n";
+	private String bloque4 = "						<!-- datos bancarios -->\r\n" + 
 			"						\r\n" + 
 			"						<entry>\r\n" + 
 			"							<key>titularCuenta</key>\r\n" + 
@@ -1673,7 +1667,7 @@ public class EscritorXml {
 			"				</value>\r\n" + 
 			"			</entry>				\r\n" + 
 			"		<!-- Autorizaci�ns -->\r\n";
-	private String bloque4Juridica = "<!-- DATOS BANCARIOS -->\r\n" + 
+	private String bloque4Juridica = "						<!-- DATOS BANCARIOS -->\r\n" + 
 			"						<entry>\r\n" + 
 			"							<key>titularCuenta</key>\r\n" + 
 			"							<value>\r\n" + 
@@ -2280,7 +2274,7 @@ public class EscritorXml {
 			"				</value>\r\n" + 
 			"			</entry>		\r\n" + 
 			"			\r\n" + 
-			"			<!-- Autorizaci�ns -->";
+			"			<!-- Autorizaci�ns -->\r\n";
 	
 	private String ano;
 	private String procedimiento;
@@ -2331,7 +2325,7 @@ public class EscritorXml {
 		
 		if(campos[0].equals("CODIGO_DELEGACION") || campos[0].equals("INTERESADO_NOTIFICACION") || campos[0].equals("MEDIO_NOTIFICACION") || campos[0].equals("IDIOMA_EXPEDIENTE")) {
 			
-			campo = "		<entry>\r\n" + 
+			campo = "			<entry>\r\n" + 
 					"				<key>" + campos[0] + "</key>\r\n" + 
 					"				<value>\r\n" + 
 					"					<xpathsolicitudsede>/" + campos[4] + "</xpathsolicitudsede>\r\n" + 
@@ -2344,7 +2338,7 @@ public class EscritorXml {
 			
 		} else if(!campos[6].equals("no")) {
 			
-			campo = "		<entry>\r\n" + 
+			campo = "			<entry>\r\n" + 
 					"				<key>" + campos[0] + "</key>\r\n" + 
 					"				<value>\r\n" + 
 					"					<bloque>solicitud</bloque>\r\n" + 
@@ -2383,23 +2377,23 @@ public class EscritorXml {
 				ruta = "/" + campos[4];
 			}
 			
-			campo = "		<entry>\r\n" + 
-					"			<key>" + campos[0] + "</key>\r\n" + 
-					"			<value>\r\n" + 
-					"				<bloque>solicitud</bloque>\r\n" + 
-					"				<descripcion>\r\n" + 
-					"					<es_ES>\r\n" + 
-					"						<![CDATA[" + campos[2] + "]]>\r\n" + 
-					"					</es_ES>\r\n" + 
-					"					<gl_ES>\r\n" + 
-					"						<![CDATA[" + campos[1] + "]]>\r\n" + 
-					"					</gl_ES>\r\n" + 
-					"				</descripcion>\r\n" + 
-					"				<tipo>" + campos[3] + "</tipo>\r\n" + 
-					"				<xpathSolicitudSede>" + ruta + "</xpathSolicitudSede>\r\n" + 
-					"				<campoFormula>" + campos[5] + "</campoFormula>\r\n" + 
-					"			</value>\r\n" + 
-					"		</entry>\r\n";
+			campo = "						<entry>\r\n" + 
+					"							<key>" + campos[0] + "</key>\r\n" + 
+					"							<value>\r\n" + 
+					"								<bloque>solicitud</bloque>\r\n" + 
+					"								<descripcion>\r\n" + 
+					"									<es_ES>\r\n" + 
+					"										<![CDATA[" + campos[2] + "]]>\r\n" + 
+					"									</es_ES>\r\n" + 
+					"									<gl_ES>\r\n" + 
+					"										<![CDATA[" + campos[1] + "]]>\r\n" + 
+					"									</gl_ES>\r\n" + 
+					"								</descripcion>\r\n" + 
+					"								<tipo>" + campos[3] + "</tipo>\r\n" + 
+					"								<xpathSolicitudSede>" + ruta + "</xpathSolicitudSede>\r\n" + 
+					"								<campoFormula>" + campos[5] + "</campoFormula>\r\n" + 
+					"							</value>\r\n" + 
+					"						</entry>\r\n";
 		}		
 		
 		return campo;
@@ -2437,7 +2431,7 @@ public class EscritorXml {
 	
 	private String formaElementosSede() {
 		
-		String bloque = "</elementosorigen>\r\n" + 
+		String bloque = "		</elementosorigen>\r\n" + 
 				"	</origen>\r\n" + 
 				"	<sede>\r\n" + 
 				"		<elementossede>\r\n" + 
