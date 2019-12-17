@@ -2,6 +2,9 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
 /*TODO List
  * 
  * Que haga el formateo 100% correcto
@@ -2286,8 +2289,9 @@ public class EscritorXml {
 	private String comprobacionDatos;
 	private int index;
 	private String archivos[][];
+	private JPanel capa;
 	
-	public EscritorXml(String ano, String procedimiento, String persona){
+	public EscritorXml(String ano, String procedimiento, String persona, JPanel capa){
 		this.ano = ano;
 		this.procedimiento = procedimiento;
 		this.persona = persona;
@@ -2299,6 +2303,7 @@ public class EscritorXml {
 		this.bloque3Juridica = bloque3Juridica.replace("SI452A", this.procedimiento);
 		this.bloque4Juridica = bloque4Juridica.replace("SI452A", this.procedimiento);
 		this.correo = correo.replace("PR410A", this.procedimiento);
+		this.capa = capa;
 	}
 
 	private String escribeElementos(String bloqueEspecificos[]) {
@@ -2420,11 +2425,13 @@ public class EscritorXml {
 				bw.flush();
 			}
 			
+			JOptionPane.showMessageDialog(capa, "Se han creado los ficheros.", "Creación de XMLs", JOptionPane.INFORMATION_MESSAGE);
+			
 			bw.close();
 			
 		} catch (IOException e) {
 			
-			System.out.println("ERROR: " + e);
+			JOptionPane.showMessageDialog(capa, e, "ERROR", JOptionPane.ERROR_MESSAGE);
 		}
 		
 	}

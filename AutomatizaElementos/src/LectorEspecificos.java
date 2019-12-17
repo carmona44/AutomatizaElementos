@@ -2,6 +2,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Iterator;
 
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.util.SystemOutLogger;
@@ -19,10 +22,10 @@ public class LectorEspecificos {
 		this.tipoPersona = tipoPersona;
 	}
 	
-	public void leeDatosEsp() {
+	public void leeDatosEsp(JPanel capa) {
 		
 		try (FileInputStream file = new FileInputStream(new File(rutaFichero))) {
-			EscritorXml escritor = new EscritorXml(ano, procedimiento, tipoPersona);
+			EscritorXml escritor = new EscritorXml(ano, procedimiento, tipoPersona, capa);
 			// leer archivo excel
 			XSSFWorkbook worbook = new XSSFWorkbook(file);
 			
@@ -64,7 +67,7 @@ public class LectorEspecificos {
 			
 		} catch (Exception e) {
 			
-			e.getMessage();
+			JOptionPane.showMessageDialog(capa, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
 			
 		}
 	}

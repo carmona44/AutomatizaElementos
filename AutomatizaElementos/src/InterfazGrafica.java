@@ -66,7 +66,7 @@ public class InterfazGrafica extends JFrame{
 		
 		//Botón de generar XMLs
 		generar = new JButton("Generar XMLs");
-		generar.setBounds(300,375,150,30);
+		generar.setBounds(300,350,150,30);
 		
 		
 		//Características y añadido de componentes a la capa
@@ -116,9 +116,9 @@ public class InterfazGrafica extends JFrame{
             			persona = personaMixta.getText();
             		}
             		LectorEspecificos lector = new LectorEspecificos(rutaFichero.getText(), codigo.getText(), ano.getText(), persona);
-            		lector.leeDatosEsp();
+            		lector.leeDatosEsp(capa);
             	} else {
-            		System.out.println("Faltan datos necesarios por indicar.");
+            		JOptionPane.showMessageDialog(capa, "No se han introducido todos los datos necesarios", "ERROR", JOptionPane.ERROR_MESSAGE);
             	}
             }
         });
