@@ -1672,7 +1672,7 @@ public class EscritorXml {
 			"					</implementacion>\r\n" + 
 			"				</value>\r\n" + 
 			"			</entry>				\r\n" + 
-			"		<!-- Autorizaci�ns -->";
+			"		<!-- Autorizaci�ns -->\r\n";
 	private String bloque4Juridica = "<!-- DATOS BANCARIOS -->\r\n" + 
 			"						<entry>\r\n" + 
 			"							<key>titularCuenta</key>\r\n" + 
@@ -2307,7 +2307,6 @@ public class EscritorXml {
 	}
 
 	private String escribeElementos(String bloqueEspecificos[]) {
-		FormateaXml buenFormato = new FormateaXml();
 		String elementos = "";
 		
 		elementos += formaCabecera();
@@ -2323,7 +2322,7 @@ public class EscritorXml {
 		elementos += comprobacionDatos;
 		elementos += formaElementosSede();
 		
-		return buenFormato.getXmlFormateado(elementos, "2");
+		return elementos;
 	}
 	
 	public String formaCampoEsp(String campos[]) {
@@ -2332,7 +2331,7 @@ public class EscritorXml {
 		
 		if(campos[0].equals("CODIGO_DELEGACION") || campos[0].equals("INTERESADO_NOTIFICACION") || campos[0].equals("MEDIO_NOTIFICACION") || campos[0].equals("IDIOMA_EXPEDIENTE")) {
 			
-			campo = "<entry>\r\n" + 
+			campo = "		<entry>\r\n" + 
 					"				<key>" + campos[0] + "</key>\r\n" + 
 					"				<value>\r\n" + 
 					"					<xpathsolicitudsede>/" + campos[4] + "</xpathsolicitudsede>\r\n" + 
@@ -2345,7 +2344,7 @@ public class EscritorXml {
 			
 		} else if(!campos[6].equals("no")) {
 			
-			campo = "<entry>\r\n" + 
+			campo = "		<entry>\r\n" + 
 					"				<key>" + campos[0] + "</key>\r\n" + 
 					"				<value>\r\n" + 
 					"					<bloque>solicitud</bloque>\r\n" + 
@@ -2367,7 +2366,7 @@ public class EscritorXml {
 					"					<xpathSolicitudSede>/" + campos[4] + "</xpathSolicitudSede>\r\n" + 
 					"					<campoFormula>" + campos[5] + "</campoFormula>\r\n" + 
 					"				</value>\r\n" + 
-					"			</entry>";
+					"			</entry>\r\n";
 			
 			comprobacionDatos += campo;
 			
@@ -2384,7 +2383,7 @@ public class EscritorXml {
 				ruta = "/" + campos[4];
 			}
 			
-			campo = "<entry>\r\n" + 
+			campo = "		<entry>\r\n" + 
 					"			<key>" + campos[0] + "</key>\r\n" + 
 					"			<value>\r\n" + 
 					"				<bloque>solicitud</bloque>\r\n" + 
@@ -2400,7 +2399,7 @@ public class EscritorXml {
 					"				<xpathSolicitudSede>" + ruta + "</xpathSolicitudSede>\r\n" + 
 					"				<campoFormula>" + campos[5] + "</campoFormula>\r\n" + 
 					"			</value>\r\n" + 
-					"		</entry>";
+					"		</entry>\r\n";
 		}		
 		
 		return campo;
@@ -2442,10 +2441,10 @@ public class EscritorXml {
 				"	</origen>\r\n" + 
 				"	<sede>\r\n" + 
 				"		<elementossede>\r\n" + 
-							camposSede[0] + 
-							camposSede[1] + 
-							camposSede[2] + 
-							camposSede[3] + 
+							camposSede[0] + "\r\n" +
+							camposSede[1] + "\r\n" +
+							camposSede[2] + "\r\n" +
+							camposSede[3] + "\r\n" +
 				"		</elementossede>\r\n" + 
 				"	</sede>\r\n" + 
 				"</modelo>";
