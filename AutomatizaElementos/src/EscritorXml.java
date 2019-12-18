@@ -31,7 +31,7 @@ public class EscritorXml {
 			"			</value>\r\n" + 
 			"		</entry>	\r\n" + 
 			"		\r\n" + 
-			"		<!-- *********************************** Pestana resumo para persoa xur�dica *********************************** -->\r\n" + 
+			"		<!-- *********************************** Pestana resumo para persoa xurídica *********************************** -->\r\n" + 
 			"		<entry>\r\n" + 
 			"			<key>PESTANA_RES</key>\r\n" + 
 			"			<value>\r\n" + 
@@ -43,7 +43,7 @@ public class EscritorXml {
 			"			</value>\r\n" + 
 			"		</entry>\r\n" + 
 			"		\r\n" + 
-			"		<!-- *********************************** Pestana resumo para persoa f�sica *********************************** -->\r\n" + 
+			"		<!-- *********************************** Pestana resumo para persoa física *********************************** -->\r\n" + 
 			"		<entry>\r\n" + 
 			"			<key>PESTANA_RES</key>\r\n" + 
 			"			<value>\r\n" + 
@@ -71,7 +71,7 @@ public class EscritorXml {
 			"	<configuracionFormularios>\r\n" + 
 			"		<formatoFormularios>\r\n" + 
 			"			\r\n" + 
-			"			<!-- Pestana resumo para persoa f�sica ou mixta -->\r\n" + 
+			"			<!-- Pestana resumo para persoa física ou mixta -->\r\n" + 
 			"			<entry>\r\n" + 
 			"				<key>formularioPestanaResumen</key>\r\n" + 
 			"				<value>\r\n" + 
@@ -87,8 +87,8 @@ public class EscritorXml {
 			"									<value>\r\n" + 
 			"										<idDatoEspecifico>solicitante.nombre</idDatoEspecifico>\r\n" + 
 			"										<etiqueta>\r\n" + 
-			"											<es_ES><![CDATA[Nombre/Raz�n social]]></es_ES>\r\n" + 
-			"											<gl_ES><![CDATA[Nome/Raz�n social]]></gl_ES>\r\n" + 
+			"											<es_ES><![CDATA[Nombre/Razón social]]></es_ES>\r\n" + 
+			"											<gl_ES><![CDATA[Nome/Razón social]]></gl_ES>\r\n" + 
 			"										</etiqueta>\r\n" + 
 			"										<tipoComponente>TEXTO</tipoComponente>\r\n" + 
 			"										<tamano>30</tamano>\r\n" + 
@@ -143,8 +143,8 @@ public class EscritorXml {
 			"									<value>\r\n" + 
 			"										<idDatoEspecifico>solicitante.identificador</idDatoEspecifico>\r\n" + 
 			"										<etiqueta>\r\n" + 
-			"											<es_ES><![CDATA[N�mero documento]]></es_ES>\r\n" + 
-			"											<gl_ES><![CDATA[N�mero documento]]></gl_ES>\r\n" + 
+			"											<es_ES><![CDATA[Número documento]]></es_ES>\r\n" + 
+			"											<gl_ES><![CDATA[Número documento]]></gl_ES>\r\n" + 
 			"										</etiqueta>\r\n" + 
 			"										<tipoComponente>TEXTO</tipoComponente>\r\n" + 
 			"										<tamano>30</tamano>\r\n" + 
@@ -157,8 +157,8 @@ public class EscritorXml {
 			"					</bloque>\r\n" + 
 			"						<bloque>\r\n" + 
 			"						<etiqueta>\r\n" + 
-			"							<es_ES><![CDATA[Datos de la revisi�n]]></es_ES>\r\n" + 
-			"							<gl_ES><![CDATA[Datos da revisi�n]]></gl_ES>\r\n" + 
+			"							<es_ES><![CDATA[Datos de la revisión]]></es_ES>\r\n" + 
+			"							<gl_ES><![CDATA[Datos da revisión]]></gl_ES>\r\n" + 
 			"						</etiqueta>\r\n" + 
 			"						<contenedor>\r\n" + 
 			"							<elementos>\r\n" + 
@@ -167,8 +167,8 @@ public class EscritorXml {
 			"									<value>\r\n" + 
 			"										<idDatoEspecifico>revision.resultado</idDatoEspecifico>\r\n" + 
 			"										<etiqueta>\r\n" + 
-			"											<es_ES><![CDATA[Resultado de la revisi�n]]></es_ES>\r\n" + 
-			"											<gl_ES><![CDATA[Resultado da revisi�n]]></gl_ES>\r\n" + 
+			"											<es_ES><![CDATA[Resultado de la revisión]]></es_ES>\r\n" + 
+			"											<gl_ES><![CDATA[Resultado da revisión]]></gl_ES>\r\n" + 
 			"										</etiqueta>\r\n" + 
 			"										<tipoComponente>TEXTO</tipoComponente>\r\n" + 
 			"										<tamano>30</tamano>\r\n" + 
@@ -181,8 +181,8 @@ public class EscritorXml {
 			"									<value>\r\n" + 
 			"										<idDatoEspecifico>revision.tipoResolucion</idDatoEspecifico>\r\n" + 
 			"										<etiqueta>\r\n" + 
-			"											<es_ES><![CDATA[Tipo de resoluci�n]]></es_ES>\r\n" + 
-			"											<gl_ES><![CDATA[Tipo de resoluci�n]]></gl_ES>\r\n" + 
+			"											<es_ES><![CDATA[Tipo de resolución]]></es_ES>\r\n" + 
+			"											<gl_ES><![CDATA[Tipo de resolución]]></gl_ES>\r\n" + 
 			"										</etiqueta>\r\n" + 
 			"										<tipoComponente>TEXTO</tipoComponente>\r\n" + 
 			"										<tamano>30</tamano>\r\n" + 
@@ -216,7 +216,7 @@ public class EscritorXml {
 			"			</value>\r\n" + 
 			"		</entry>	\r\n" + 
 			"		\r\n" + 
-			"		<!-- *********************************** Pestana resumo para persoa xur�dica *********************************** -->\r\n" + 
+			"		<!-- *********************************** Pestana resumo para persoa xurídica *********************************** -->\r\n" + 
 			"		<entry>\r\n" + 
 			"			<key>PESTANA_RES</key>\r\n" + 
 			"			<value>\r\n" + 
@@ -228,7 +228,7 @@ public class EscritorXml {
 			"			</value>\r\n" + 
 			"		</entry>\r\n" + 
 			"		\r\n" + 
-			"		<!-- *********************************** Pestana resumo para persoa f�sica *********************************** -->\r\n" + 
+			"		<!-- *********************************** Pestana resumo para persoa física *********************************** -->\r\n" + 
 			"		<entry>\r\n" + 
 			"			<key>PESTANA_RES</key>\r\n" + 
 			"			<value>\r\n" + 
@@ -256,7 +256,7 @@ public class EscritorXml {
 			"	<configuracionFormularios>\r\n" + 
 			"		<formatoFormularios>\r\n" + 
 			"			\r\n" + 
-			"			<!-- Pestana resumo para persoa f�sica ou mixta -->\r\n" + 
+			"			<!-- Pestana resumo para persoa física ou mixta -->\r\n" + 
 			"			<entry>\r\n" + 
 			"				<key>formularioPestanaResumen</key>\r\n" + 
 			"				<value>\r\n" + 
@@ -272,8 +272,8 @@ public class EscritorXml {
 			"									<value>\r\n" + 
 			"										<idDatoEspecifico>solicitante.nombre</idDatoEspecifico>\r\n" + 
 			"										<etiqueta>\r\n" + 
-			"											<es_ES><![CDATA[RAZON SOCIAL]]></es_ES>\r\n" + 
-			"											<gl_ES><![CDATA[RAZON SOCIAL]]></gl_ES>\r\n" + 
+			"											<es_ES><![CDATA[Razón social]]></es_ES>\r\n" + 
+			"											<gl_ES><![CDATA[Razón social]]></gl_ES>\r\n" + 
 			"										</etiqueta>\r\n" + 
 			"										<tipoComponente>TEXTO</tipoComponente>\r\n" + 
 			"										<tamano>30</tamano>\r\n" + 
@@ -300,8 +300,8 @@ public class EscritorXml {
 			"									<value>\r\n" + 
 			"										<idDatoEspecifico>solicitante.identificador</idDatoEspecifico>\r\n" + 
 			"										<etiqueta>\r\n" + 
-			"											<es_ES><![CDATA[N�mero documento]]></es_ES>\r\n" + 
-			"											<gl_ES><![CDATA[N�mero documento]]></gl_ES>\r\n" + 
+			"											<es_ES><![CDATA[Número documento]]></es_ES>\r\n" + 
+			"											<gl_ES><![CDATA[Número documento]]></gl_ES>\r\n" + 
 			"										</etiqueta>\r\n" + 
 			"										<tipoComponente>TEXTO</tipoComponente>\r\n" + 
 			"										<tamano>30</tamano>\r\n" + 
@@ -314,8 +314,8 @@ public class EscritorXml {
 			"					</bloque>\r\n" + 
 			"					<bloque>\r\n" + 
 			"						<etiqueta>\r\n" + 
-			"							<es_ES><![CDATA[Datos de la revisi�n]]></es_ES>\r\n" + 
-			"							<gl_ES><![CDATA[Datos da revisi�n]]></gl_ES>\r\n" + 
+			"							<es_ES><![CDATA[Datos de la revisión]]></es_ES>\r\n" + 
+			"							<gl_ES><![CDATA[Datos da revisión]]></gl_ES>\r\n" + 
 			"						</etiqueta>\r\n" + 
 			"						<contenedor>\r\n" + 
 			"							<elementos>\r\n" + 
@@ -324,8 +324,8 @@ public class EscritorXml {
 			"									<value>\r\n" + 
 			"										<idDatoEspecifico>revision.resultado</idDatoEspecifico>\r\n" + 
 			"										<etiqueta>\r\n" + 
-			"											<es_ES><![CDATA[Resultado de la revisi�n]]></es_ES>\r\n" + 
-			"											<gl_ES><![CDATA[Resultado da revisi�n]]></gl_ES>\r\n" + 
+			"											<es_ES><![CDATA[Resultado de la revisión]]></es_ES>\r\n" + 
+			"											<gl_ES><![CDATA[Resultado da revisión]]></gl_ES>\r\n" + 
 			"										</etiqueta>\r\n" + 
 			"										<tipoComponente>TEXTO</tipoComponente>\r\n" + 
 			"										<tamano>30</tamano>\r\n" + 
@@ -338,8 +338,8 @@ public class EscritorXml {
 			"									<value>\r\n" + 
 			"										<idDatoEspecifico>revision.tipoResolucion</idDatoEspecifico>\r\n" + 
 			"										<etiqueta>\r\n" + 
-			"											<es_ES><![CDATA[Tipo de resoluci�n]]></es_ES>\r\n" + 
-			"											<gl_ES><![CDATA[Tipo de resoluci�n]]></gl_ES>\r\n" + 
+			"											<es_ES><![CDATA[Tipo de resolución]]></es_ES>\r\n" + 
+			"											<gl_ES><![CDATA[Tipo de resolución]]></gl_ES>\r\n" + 
 			"										</etiqueta>\r\n" + 
 			"										<tipoComponente>TEXTO</tipoComponente>\r\n" + 
 			"										<tamano>30</tamano>\r\n" + 
@@ -359,8 +359,8 @@ public class EscritorXml {
 			"	<bloqueExportacion>\r\n" + 
 			"		<columnaSimple>\r\n" + 
 			"			<nombreColumna>\r\n" + 
-			"				<gl_ES><![CDATA[N�mero]]></gl_ES>\r\n" + 
-			"				<es_Es><![CDATA[N�mero]]></es_Es>\r\n" + 
+			"				<gl_ES><![CDATA[Número]]></gl_ES>\r\n" + 
+			"				<es_Es><![CDATA[Número]]></es_Es>\r\n" + 
 			"			</nombreColumna>\r\n" + 
 			"			<identificadorColumna>NUMERO_EXPEDIENTE</identificadorColumna>\r\n" + 
 			"		</columnaSimple>\r\n" + 
@@ -372,8 +372,8 @@ public class EscritorXml {
 			"	<bloqueExportacion>\r\n" + 
 			"		<columnaSimple>\r\n" + 
 			"			<nombreColumna>\r\n" + 
-			"				<gl_ES><![CDATA[Data creaci�n]]></gl_ES>\r\n" + 
-			"				<es_Es><![CDATA[Fecha creaci�n]]></es_Es>\r\n" + 
+			"				<gl_ES><![CDATA[Data creación]]></gl_ES>\r\n" + 
+			"				<es_Es><![CDATA[Fecha creación]]></es_Es>\r\n" + 
 			"			</nombreColumna>\r\n" + 
 			"			<identificadorColumna>FECHA_CREACION</identificadorColumna>\r\n" + 
 			"		</columnaSimple>\r\n" + 
@@ -385,8 +385,8 @@ public class EscritorXml {
 			"	<bloqueExportacion>\r\n" + 
 			"		<columnaSimple>\r\n" + 
 			"			<nombreColumna>\r\n" + 
-			"				<gl_ES><![CDATA[N�mero rexistro]]></gl_ES>\r\n" + 
-			"				<es_Es><![CDATA[N�mero registro]]></es_Es>\r\n" + 
+			"				<gl_ES><![CDATA[Número rexistro]]></gl_ES>\r\n" + 
+			"				<es_Es><![CDATA[Número registro]]></es_Es>\r\n" + 
 			"			</nombreColumna>\r\n" + 
 			"			<identificadorColumna>NUMERO_REGISTRO</identificadorColumna>\r\n" + 
 			"		</columnaSimple>\r\n" + 
@@ -442,7 +442,7 @@ public class EscritorXml {
 			"			</nombreColumna>\r\n" + 
 			"			<identificadorColumna>NOMBRE_SOLICITANTE</identificadorColumna>\r\n" + 
 			"		</columnaSimple>\r\n" + 
-			"		<!-- ****************************************** Eliminar en caso de persoa xur�dica ****************************************** -->\r\n" + 
+			"		<!-- ****************************************** Eliminar en caso de persoa xurídica ****************************************** -->\r\n" + 
 			"		\r\n" + 
 			"		<columnaSimple>\r\n" + 
 			"			<nombreColumna>\r\n" + 
@@ -649,7 +649,7 @@ public class EscritorXml {
 			"					</implementacion>\r\n" + 
 			"				</value>\r\n" + 
 			"			</entry>\r\n" + 
-			"			<!-- Datos de revisi�n-->\r\n" + 
+			"			<!-- Datos de revisión-->\r\n" + 
 			"			<entry>\r\n" + 
 			"				<key>revision</key>\r\n" + 
 			"				<value>\r\n" + 
@@ -672,10 +672,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Resultado revisi�n]]>\r\n" + 
+			"										<![CDATA[Resultado revisión]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Resultado revisi�n]]>\r\n" + 
+			"										<![CDATA[Resultado revisión]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -689,10 +689,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Tipo resoluci�n]]>\r\n" + 
+			"										<![CDATA[Tipo resolución]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Tipo resoluci�n]]>\r\n" + 
+			"										<![CDATA[Tipo resolución]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -700,7 +700,7 @@ public class EscritorXml {
 			"								<campoFormula/>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
-			"						<!-- Datos espec�ficos -->\r\n";
+			"						<!-- Datos específicos -->\r\n";
 	private String bloque3Juridica = "</convocatoria>\r\n" + 
 			"	<origen>\r\n" + 
 			"		<elementosorigen>\r\n" + 
@@ -827,7 +827,7 @@ public class EscritorXml {
 			"					</implementacion>\r\n" + 
 			"				</value>\r\n" + 
 			"			</entry>\r\n" + 
-			"			<!-- Datos de revisi�n-->\r\n" + 
+			"			<!-- Datos de revisión-->\r\n" + 
 			"			<entry>\r\n" + 
 			"				<key>revision</key>\r\n" + 
 			"				<value>\r\n" + 
@@ -850,10 +850,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Resultado revisi�n]]>\r\n" + 
+			"										<![CDATA[Resultado revisión]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Resultado revisi�n]]>\r\n" + 
+			"										<![CDATA[Resultado revisión]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -867,10 +867,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Tipo resoluci�n]]>\r\n" + 
+			"										<![CDATA[Tipo resolución]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Tipo resoluci�n]]>\r\n" + 
+			"										<![CDATA[Tipo resolución]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -878,7 +878,7 @@ public class EscritorXml {
 			"								<campoFormula/>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
-			"						<!-- Datos espec�ficos -->\r\n";
+			"						<!-- Datos específicos -->\r\n";
 	private String bloque4 = "						<!-- datos bancarios -->\r\n" + 
 			"						\r\n" + 
 			"						<entry>\r\n" + 
@@ -918,7 +918,7 @@ public class EscritorXml {
 			"							<!-- Fin datos bancarios -->\r\n" + 
 			"							\r\n" + 
 			"						\r\n" + 
-			"						<!-- FIN Datos espec�ficos -->			\r\n" + 
+			"						<!-- FIN Datos específicos -->			\r\n" + 
 			"\r\n" + 
 			"					</elementosLista>\r\n" + 
 			"					<implementacion>\r\n" + 
@@ -928,17 +928,17 @@ public class EscritorXml {
 			"					</implementacion>\r\n" + 
 			"				</value>\r\n" + 
 			"			</entry>\r\n" + 
-			"			<!-- Direcci�n del solicitante -->\r\n" + 
+			"			<!-- Dirección del solicitante -->\r\n" + 
 			"			<entry>\r\n" + 
 			"				<key>direccionSolicitante</key>\r\n" + 
 			"				<value>\r\n" + 
 			"					<bloque>solicitud</bloque>\r\n" + 
 			"					<descripcion>\r\n" + 
 			"						<es_ES>\r\n" + 
-			"							<![CDATA[Direcci�n solicitante]]>\r\n" + 
+			"							<![CDATA[Dirección solicitante]]>\r\n" + 
 			"						</es_ES>\r\n" + 
 			"						<gl_ES>\r\n" + 
-			"							<![CDATA[Direcci�n solicitante]]>\r\n" + 
+			"							<![CDATA[Dirección solicitante]]>\r\n" + 
 			"						</gl_ES>\r\n" + 
 			"					</descripcion>\r\n" + 
 			"					<tipo>\r\n" + 
@@ -951,10 +951,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Tipo v�a solicitante]]>\r\n" + 
+			"										<![CDATA[Tipo vía solicitante]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Tipo v�a solicitante]]>\r\n" + 
+			"										<![CDATA[Tipo vía solicitante]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -968,10 +968,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Nombre v�a solicitante]]>\r\n" + 
+			"										<![CDATA[Nombre vía solicitante]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Nome v�a solicitante]]>\r\n" + 
+			"										<![CDATA[Nome vía solicitante]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -985,10 +985,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[N�mero solicitante]]>\r\n" + 
+			"										<![CDATA[Número solicitante]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[N�mero solicitante]]>\r\n" + 
+			"										<![CDATA[Número solicitante]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1155,10 +1155,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Tel�fono solicitante]]>\r\n" + 
+			"										<![CDATA[Teléfono solicitante]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Tel�fono solicitante]]>\r\n" + 
+			"										<![CDATA[Teléfono solicitante]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1172,10 +1172,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Tel�fono m�vil solicitante]]>\r\n" + 
+			"										<![CDATA[Tel�fono móvil solicitante]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Tel�fono m�bil solicitante]]>\r\n" + 
+			"										<![CDATA[Tel�fono móbil solicitante]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1319,14 +1319,14 @@ public class EscritorXml {
 			"					</implementacion>\r\n" + 
 			"				</value>\r\n" + 
 			"			</entry>\r\n" + 
-			"			<!-- Direcci�n de notificaci�n-->\r\n" + 
+			"			<!-- Dirección de notificación-->\r\n" + 
 			"			<entry>\r\n" + 
 			"				<key>direccionRepresentante</key>\r\n" + 
 			"				<value>\r\n" + 
 			"					<bloque>solicitud</bloque>\r\n" + 
 			"					<descripcion>\r\n" + 
 			"						<es_ES>\r\n" + 
-			"							<![CDATA[Direcci�n representante]]>\r\n" + 
+			"							<![CDATA[Dirección representante]]>\r\n" + 
 			"						</es_ES>\r\n" + 
 			"						<gl_ES>\r\n" + 
 			"							<![CDATA[Enderezo representante]]>\r\n" + 
@@ -1342,10 +1342,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Tipo v�a notificaci�n]]>\r\n" + 
+			"										<![CDATA[Tipo vía notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Tipo v�a notificaci�n]]>\r\n" + 
+			"										<![CDATA[Tipo vía notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1359,10 +1359,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Nombre v�a notificaci�n]]>\r\n" + 
+			"										<![CDATA[Nombre vía notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Nome v�a notificaci�n]]>\r\n" + 
+			"										<![CDATA[Nome vía notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1376,10 +1376,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[N�mero notificaci�n]]>\r\n" + 
+			"										<![CDATA[Número notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[N�mero notificaci�n]]>\r\n" + 
+			"										<![CDATA[Número notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1393,10 +1393,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Escalera notificaci�n]]>\r\n" + 
+			"										<![CDATA[Escalera notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Escaleira notificaci�n]]>\r\n" + 
+			"										<![CDATA[Escaleira notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1410,10 +1410,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Piso notificaci�n]]>\r\n" + 
+			"										<![CDATA[Piso notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Piso notificaci�n]]>\r\n" + 
+			"										<![CDATA[Piso notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1427,10 +1427,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Puerta notificaci�n]]>\r\n" + 
+			"										<![CDATA[Puerta notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Porta notificaci�n]]>\r\n" + 
+			"										<![CDATA[Porta notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1444,10 +1444,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Parroquia Notificaci�n]]>\r\n" + 
+			"										<![CDATA[Parroquia Notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Parroquia Notificaci�n]]>\r\n" + 
+			"										<![CDATA[Parroquia Notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1461,10 +1461,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[lugar Notificaci�n]]>\r\n" + 
+			"										<![CDATA[lugar Notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[lugar Notificaci�n]]>\r\n" + 
+			"										<![CDATA[lugar Notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1478,10 +1478,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[CP notificaci�n]]>\r\n" + 
+			"										<![CDATA[CP notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[CP notificaci�n]]>\r\n" + 
+			"										<![CDATA[CP notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1495,10 +1495,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Provincia notificaci�n]]>\r\n" + 
+			"										<![CDATA[Provincia notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Provincia notificaci�n]]>\r\n" + 
+			"										<![CDATA[Provincia notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1512,10 +1512,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Municipio notificaci�n]]>\r\n" + 
+			"										<![CDATA[Municipio notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Concello notificaci�n]]>\r\n" + 
+			"										<![CDATA[Concello notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1529,10 +1529,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Localidad notificaci�n]]>\r\n" + 
+			"										<![CDATA[Localidad notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Localidade notificaci�n]]>\r\n" + 
+			"										<![CDATA[Localidade notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1547,10 +1547,10 @@ public class EscritorXml {
 			"									<!-- generico, solicitud, tramitacion -->\r\n" + 
 			"									<descripcion>\r\n" + 
 			"										<es_ES>\r\n" + 
-			"											<![CDATA[Telefono de notificaci�n]]>\r\n" + 
+			"											<![CDATA[Telefono de notificación]]>\r\n" + 
 			"										</es_ES>\r\n" + 
 			"										<gl_ES>\r\n" + 
-			"											<![CDATA[Telefono de notificaci�n]]>\r\n" + 
+			"											<![CDATA[Telefono de notificación]]>\r\n" + 
 			"										</gl_ES>\r\n" + 
 			"									</descripcion>\r\n" + 
 			"									<tipo>String</tipo>\r\n" + 
@@ -1566,10 +1566,10 @@ public class EscritorXml {
 			"									<!-- generico, solicitud, tramitacion -->\r\n" + 
 			"									<descripcion>\r\n" + 
 			"										<es_ES>\r\n" + 
-			"											<![CDATA[Email de notificaci�n]]>\r\n" + 
+			"											<![CDATA[Email de notificación]]>\r\n" + 
 			"										</es_ES>\r\n" + 
 			"										<gl_ES>\r\n" + 
-			"											<![CDATA[Email de notificaci�n]]>\r\n" + 
+			"											<![CDATA[Email de notificación]]>\r\n" + 
 			"										</gl_ES>\r\n" + 
 			"									</descripcion>\r\n" + 
 			"									<tipo>String</tipo>\r\n" + 
@@ -1593,10 +1593,10 @@ public class EscritorXml {
 			"					<bloque>solicitud</bloque>\r\n" + 
 			"					<descripcion>\r\n" + 
 			"						<es_ES>\r\n" + 
-			"							<![CDATA[Datos Notificaci�n]]>\r\n" + 
+			"							<![CDATA[Datos Notificación]]>\r\n" + 
 			"						</es_ES>\r\n" + 
 			"						<gl_ES>\r\n" + 
-			"							<![CDATA[Datos Notificaci�n]]>\r\n" + 
+			"							<![CDATA[Datos Notificación]]>\r\n" + 
 			"						</gl_ES>\r\n" + 
 			"					</descripcion>\r\n" + 
 			"					<tipo>\r\n" + 
@@ -1611,10 +1611,10 @@ public class EscritorXml {
 			"<!-- generico, solicitud, tramitacion -->\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Notif�quese a]]>\r\n" + 
+			"										<![CDATA[Notifíquese a]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Notif�quese a]]>\r\n" + 
+			"										<![CDATA[Notifíquese a]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>Integer</tipo>\r\n" + 
@@ -1629,10 +1629,10 @@ public class EscritorXml {
 			"<!-- generico, solicitud, tramitacion -->\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Solicita canal electr�nico]]>\r\n" + 
+			"										<![CDATA[Solicita canal electrónico]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Solicita canle electr�nico]]>\r\n" + 
+			"										<![CDATA[Solicita canle electrónico]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>Integer</tipo>\r\n" + 
@@ -1647,10 +1647,10 @@ public class EscritorXml {
 			"<!-- generico, solicitud, tramitacion -->\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Fecha elecci�n medio]]>\r\n" + 
+			"										<![CDATA[Fecha elección medio]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Data elecci�n medio]]>\r\n" + 
+			"										<![CDATA[Data elección medio]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>Date</tipo>\r\n" + 
@@ -1666,7 +1666,7 @@ public class EscritorXml {
 			"					</implementacion>\r\n" + 
 			"				</value>\r\n" + 
 			"			</entry>				\r\n" + 
-			"		<!-- Autorizaci�ns -->\r\n";
+			"		<!-- Autorizacións -->\r\n";
 	private String bloque4Juridica = "						<!-- DATOS BANCARIOS -->\r\n" + 
 			"						<entry>\r\n" + 
 			"							<key>titularCuenta</key>\r\n" + 
@@ -1725,10 +1725,10 @@ public class EscritorXml {
 			"					<bloque>solicitud</bloque>\r\n" + 
 			"					<descripcion>\r\n" + 
 			"						<es_ES>\r\n" + 
-			"							<![CDATA[Direcci�n solicitante]]>\r\n" + 
+			"							<![CDATA[Dirección solicitante]]>\r\n" + 
 			"						</es_ES>\r\n" + 
 			"						<gl_ES>\r\n" + 
-			"							<![CDATA[Direcci�n solicitante]]>\r\n" + 
+			"							<![CDATA[Dirección solicitante]]>\r\n" + 
 			"						</gl_ES>\r\n" + 
 			"					</descripcion>\r\n" + 
 			"					<tipo>\r\n" + 
@@ -1741,10 +1741,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Tipo v�a solicitante]]>\r\n" + 
+			"										<![CDATA[Tipo vía solicitante]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Tipo v�a solicitante]]>\r\n" + 
+			"										<![CDATA[Tipo vía solicitante]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1758,10 +1758,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Nombre v�a solicitante]]>\r\n" + 
+			"										<![CDATA[Nombre vía solicitante]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Nome v�a solicitante]]>\r\n" + 
+			"										<![CDATA[Nome vía solicitante]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1775,10 +1775,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[N�mero solicitante]]>\r\n" + 
+			"										<![CDATA[Número solicitante]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[N�mero solicitante]]>\r\n" + 
+			"										<![CDATA[Número solicitante]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1945,10 +1945,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Tel�fono solicitante]]>\r\n" + 
+			"										<![CDATA[Teléfono solicitante]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Tel�fono solicitante]]>\r\n" + 
+			"										<![CDATA[Teléfono solicitante]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -2128,17 +2128,17 @@ public class EscritorXml {
 			"				</value>\r\n" + 
 			"			</entry>\r\n" + 
 			"\r\n" + 
-			"			<!-- Datos de notificacion en caso de persona mixta o f�sica -->\r\n" + 
+			"			<!-- Datos de notificacion en caso de persona mixta o física -->\r\n" + 
 			"\r\n" + 
 			"\r\n" + 
-			"			<!-- Direcci�n de notificaci�n en caso de persona jur�dica -->\r\n" + 
+			"			<!-- Dirección de notificación en caso de persona jurídica -->\r\n" + 
 			"			<entry>\r\n" + 
 			"				<key>direccionRepresentante</key>\r\n" + 
 			"				<value>\r\n" + 
 			"					<bloque>solicitud</bloque>\r\n" + 
 			"					<descripcion>\r\n" + 
 			"						<es_ES>\r\n" + 
-			"							<![CDATA[Direcci�n representante]]>\r\n" + 
+			"							<![CDATA[Dirección representante]]>\r\n" + 
 			"						</es_ES>\r\n" + 
 			"						<gl_ES>\r\n" + 
 			"							<![CDATA[Enderezo representante]]>\r\n" + 
@@ -2156,10 +2156,10 @@ public class EscritorXml {
 			"								<!-- generico, solicitud, tramitacion -->\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Telefono de notificaci�n]]>\r\n" + 
+			"										<![CDATA[Telefono de notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Telefono de notificaci�n]]>\r\n" + 
+			"										<![CDATA[Telefono de notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -2175,10 +2175,10 @@ public class EscritorXml {
 			"								<!-- generico, solicitud, tramitacion -->\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Email de notificaci�n]]>\r\n" + 
+			"										<![CDATA[Email de notificación]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Email de notificaci�n]]>\r\n" + 
+			"										<![CDATA[Email de notificación]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -2200,10 +2200,10 @@ public class EscritorXml {
 			"					<bloque>solicitud</bloque>\r\n" + 
 			"					<descripcion>\r\n" + 
 			"						<es_ES>\r\n" + 
-			"							<![CDATA[Datos Notificaci�n]]>\r\n" + 
+			"							<![CDATA[Datos Notificación]]>\r\n" + 
 			"						</es_ES>\r\n" + 
 			"						<gl_ES>\r\n" + 
-			"							<![CDATA[Datos Notificaci�n]]>\r\n" + 
+			"							<![CDATA[Datos Notificación]]>\r\n" + 
 			"						</gl_ES>\r\n" + 
 			"					</descripcion>\r\n" + 
 			"					<tipo>\r\n" + 
@@ -2218,10 +2218,10 @@ public class EscritorXml {
 			"								<!-- generico, solicitud, tramitacion -->\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Notif�quese a]]>\r\n" + 
+			"										<![CDATA[Notifíquese a]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Notif�quese a]]>\r\n" + 
+			"										<![CDATA[Notifíquese a]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>Integer</tipo>\r\n" + 
@@ -2236,10 +2236,10 @@ public class EscritorXml {
 			"								<!-- generico, solicitud, tramitacion -->\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Solicita canal electr�nico]]>\r\n" + 
+			"										<![CDATA[Solicita canal electrónico]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Solicita canle electr�nico]]>\r\n" + 
+			"										<![CDATA[Solicita canle electrónico]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>Integer</tipo>\r\n" + 
@@ -2254,10 +2254,10 @@ public class EscritorXml {
 			"								<!-- generico, solicitud, tramitacion -->\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Fecha elecci�n medio]]>\r\n" + 
+			"										<![CDATA[Fecha elección medio]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Data elecci�n medio]]>\r\n" + 
+			"										<![CDATA[Data elección medio]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>Date</tipo>\r\n" + 
@@ -2274,7 +2274,7 @@ public class EscritorXml {
 			"				</value>\r\n" + 
 			"			</entry>		\r\n" + 
 			"			\r\n" + 
-			"			<!-- Autorizaci�ns -->\r\n";
+			"			<!-- Autorizacións -->\r\n";
 	
 	private String ano;
 	private String procedimiento;
