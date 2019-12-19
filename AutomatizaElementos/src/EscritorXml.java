@@ -1172,10 +1172,10 @@ public class EscritorXml {
 			"								<bloque>solicitud</bloque>\r\n" + 
 			"								<descripcion>\r\n" + 
 			"									<es_ES>\r\n" + 
-			"										<![CDATA[Tel�fono móvil solicitante]]>\r\n" + 
+			"										<![CDATA[Teléfono móvil solicitante]]>\r\n" + 
 			"									</es_ES>\r\n" + 
 			"									<gl_ES>\r\n" + 
-			"										<![CDATA[Tel�fono móbil solicitante]]>\r\n" + 
+			"										<![CDATA[Teléfono móbil solicitante]]>\r\n" + 
 			"									</gl_ES>\r\n" + 
 			"								</descripcion>\r\n" + 
 			"								<tipo>String</tipo>\r\n" + 
@@ -1956,7 +1956,7 @@ public class EscritorXml {
 			"								<campoFormula>SOLI1_TELEFONO</campoFormula>\r\n" + 
 			"							</value>\r\n" + 
 			"						</entry>\r\n" + 
-			"						<!-- ******************** Eliminar no caso de persoa xur�dica ******************** -->\r\n" + 
+			"						<!-- ******************** Eliminar no caso de persoa xurídica ******************** -->\r\n" + 
 			"						<entry>\r\n" + 
 			"							<key>movil</key>\r\n" + 
 			"							<value>\r\n" + 
