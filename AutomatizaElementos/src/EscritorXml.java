@@ -459,8 +459,8 @@ public class EscritorXml {
 			"	<bloqueExportacion>\r\n" + 
 			"		<columnaSimple>\r\n" + 
 			"			<nombreColumna>\r\n" + 
-			"				<gl_ES><![CDATA[Tipo de resoluci�n]]></gl_ES>\r\n" + 
-			"				<es_Es><![CDATA[Tipo de resoluci�n]]></es_Es>\r\n" + 
+			"				<gl_ES><![CDATA[Tipo de resolución]]></gl_ES>\r\n" + 
+			"				<es_Es><![CDATA[Tipo de resolución]]></es_Es>\r\n" + 
 			"			</nombreColumna>\r\n" + 
 			"			<identificadorColumna>TIPO_RESOLUCION</identificadorColumna>\r\n" + 
 			"		</columnaSimple>\r\n" + 
